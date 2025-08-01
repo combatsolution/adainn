@@ -12,29 +12,41 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Nunito",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Nunito", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #012970; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #4154f1; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #444444;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #012970;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #4154f1;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #012970;  /* The default color of the main navmenu links */
-  --nav-hover-color: #4154f1; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #4154f1; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #012970;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #4154f1;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #4154f1;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -157,7 +169,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 70px;
   margin-right: 8px;
 }
 
@@ -302,6 +314,8 @@ h6 {
     font-size: 12px;
   }
 
+
+
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
@@ -326,6 +340,14 @@ h6 {
     left: -100%;
     visibility: visible;
   }
+}
+
+.navmenu .before-related a {
+  color: white;
+}
+
+.sitenamewhite {
+  color: white !important;
 }
 
 /* Navmenu - Mobile */
@@ -833,7 +855,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Hero Section with Rotating Background Images
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
@@ -842,22 +864,91 @@ section,
   padding: 80px 0 60px 0;
   display: flex;
   align-items: center;
-  background: url(../img/hero-bg.png) top center no-repeat;
-  background-size: cover;
+  overflow: hidden;
+  background: none;
 }
 
+/* Background Image Rotation System */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: rotateBackgrounds 10s infinite;
+}
+
+/* Overlay for text readability */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: black;
+  opacity: 0.5;
+}
+
+@keyframes rotateBackgrounds {
+
+  0%,
+  20% {
+    background-image: url('../img/cartoon-ai-robot-character-scene.jpg');
+    opacity: 1;
+  }
+
+  20%,
+  40% {
+    background-image: url('../img/robot-handshake-human-background-futuristic-digital-age-min.jpg');
+    opacity: 1;
+  }
+
+  40%,
+  60% {
+    background-image: url('../img/business-person-looking-finance-graphs-min.jpg');
+    opacity: 1;
+  }
+
+  60%,
+  80% {
+    background-image: url('../img/representation-user-experience-interface-design-min.jpg');
+    opacity: 1;
+  }
+
+  80%,
+  100% {
+    background-image: url('../img/cartoon-ai-robot-character-scene.jpg');
+    opacity: 1;
+  }
+}
+
+/* Enhanced text styling for better readability */
 .hero h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: rgba(255, 255, 255, 0.9);
   margin: 5px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
 }
 
 .hero .btn-get-started {
@@ -873,7 +964,9 @@ section,
   padding: 12px 40px;
   border-radius: 4px;
   transition: 0.5s;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
 }
 
 .hero .btn-get-started i {
@@ -885,7 +978,8 @@ section,
 .hero .btn-get-started:hover {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
 }
 
 .hero .btn-get-started:hover i {
@@ -895,8 +989,11 @@ section,
 .hero .btn-watch-video {
   font-size: 16px;
   transition: 0.5s;
-  color: var(--default-color);
+  color: #ffffff;
   font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
 }
 
 .hero .btn-watch-video i {
@@ -905,6 +1002,7 @@ section,
   transition: 0.3s;
   line-height: 0;
   margin-right: 8px;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
 }
 
 .hero .btn-watch-video:hover {
@@ -915,8 +1013,70 @@ section,
   color: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
+/* Hero image styling */
+.hero-img {
+  position: relative;
+  z-index: 1;
+}
+
 .hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+/* Additional floating elements for visual interest */
+.hero .container::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float-1 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+.hero .container::after {
+  content: '';
+  position: absolute;
+  bottom: 30%;
+  left: 5%;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  animation: float-2 8s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes float-1 {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+    opacity: 0.6;
+  }
+}
+
+@keyframes float-2 {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: translateY(30px) rotate(-180deg);
+    opacity: 0.4;
+  }
 }
 
 @media (max-width: 640px) {
@@ -930,6 +1090,12 @@ section,
     line-height: 24px;
     margin-bottom: 30px;
   }
+
+  /* Hide floating elements on mobile */
+  .hero .container::before,
+  .hero .container::after {
+    display: none;
+  }
 }
 
 @keyframes up-down {
@@ -940,6 +1106,11 @@ section,
   100% {
     transform: translateY(-10px);
   }
+}
+
+/* Smooth transition between background changes */
+.hero::before {
+  transition: all 0.8s ease-in-out;
 }
 
 /*--------------------------------------------------------------
@@ -993,6 +1164,12 @@ section,
 .about .content .btn-read-more:hover i {
   transform: translateX(5px);
 }
+
+/* 
+#about img {
+  width: 90%;
+  height: 80%;
+} */
 
 /*--------------------------------------------------------------
 # Values Section
@@ -1058,6 +1235,7 @@ section,
   font-size: 16px;
 }
 
+
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
@@ -1114,6 +1292,181 @@ section,
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin-bottom: 0;
+}
+
+
+
+/* Alt Features AI Showcase - Scoped styles to avoid conflicts */
+#alt-features .alt-features-ai-showcase {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#alt-features .alt-features-ai-image {
+  position: absolute;
+  width: 435px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: all 0.8s ease;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  overflow: hidden;
+}
+
+#alt-features .alt-features-ai-image.alt-features-ai-active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+#alt-features .alt-features-ai-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+#alt-features .alt-features-ai-image-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+#alt-features .alt-features-floating-elements {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#alt-features .alt-features-floating-icon {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: altFeaturesFloatAnimation 3s ease-in-out infinite;
+}
+
+#alt-features .alt-features-icon-1 {
+  top: 15%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+#alt-features .alt-features-icon-2 {
+  top: 25%;
+  right: 20%;
+  animation-delay: 1s;
+}
+
+#alt-features .alt-features-icon-3 {
+  bottom: 35%;
+  left: 10%;
+  animation-delay: 2s;
+}
+
+#alt-features .alt-features-icon-4 {
+  bottom: 20%;
+  right: 15%;
+  animation-delay: 1.5s;
+}
+
+#alt-features .alt-features-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#alt-features .alt-features-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #3b82f6;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: altFeaturesParticleFloat 4s linear infinite;
+}
+
+@keyframes altFeaturesFloatAnimation {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(3deg);
+  }
+}
+
+@keyframes altFeaturesParticleFloat {
+  0% {
+    transform: translateY(100vh) translateX(0);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.5;
+  }
+
+  90% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(-100px) translateX(80px);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #alt-features .alt-features-ai-image {
+    width: 300px;
+    height: 220px;
+  }
+
+  #alt-features .alt-features-ai-showcase {
+    height: 400px;
+  }
+
+  #alt-features .alt-features-floating-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #alt-features .alt-features-ai-image {
+    width: 280px;
+    height: 200px;
+  }
+
+  #alt-features .alt-features-ai-showcase {
+    height: 350px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1504,7 +1857,7 @@ section,
 
 .portfolio .portfolio-content img {
   transition: 0.3s;
-  
+
 }
 
 .portfolio .portfolio-content .portfolio-info {
@@ -1767,17 +2120,19 @@ section,
 
 .swiper-slide {
   display: flex;
-  height: auto; /* Optional: to avoid overflow */
+  height: auto;
+  /* Optional: to avoid overflow */
 }
 
 /* Ensure testimonial item fills the slide and equal height */
 .testimonial-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* keep profile at bottom */
+  justify-content: space-between;
+  /* keep profile at bottom */
   background: #fff;
   padding: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   width: 100%;
   height: auto;
@@ -1891,7 +2246,7 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item {
+/* .contact .info-item {
   background: color-mix(in srgb, var(--default-color), transparent 96%);
   padding: 30px;
 }
@@ -1956,6 +2311,189 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+} */
+
+
+
+/* Contact Section Specific Styles - Namespace: contact-section-unique */
+.contact-section-unique .contact-info-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  padding: 2.5rem;
+  color: white;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-section-unique .contact-info-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.contact-section-unique .contact-info-box>* {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-section-unique .contact-info-box .contact-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.contact-section-unique .contact-info-box .contact-description {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.contact-section-unique .contact-detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.contact-section-unique .contact-detail-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(10px);
+}
+
+.contact-section-unique .contact-detail-item .contact-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: white;
+}
+
+.contact-section-unique .contact-detail-item .contact-content .contact-label {
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+}
+
+.contact-section-unique .contact-detail-item .contact-content .contact-text {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+.contact-section-unique .contact-social-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-section-unique .contact-social-section .social-title {
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.contact-section-unique .contact-social-section .social-link {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  color: white;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-section-unique .contact-social-section .social-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+  color: white;
+}
+
+.contact-section-unique .contact-form-wrapper {
+  background: #f8f9fa;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section-unique .contact-form-wrapper .form-control {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-section-unique .contact-form-wrapper .form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.contact-section-unique .contact-form-wrapper .contact-submit-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-section-unique .contact-form-wrapper .contact-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+.contact-section-unique .contact-form-wrapper .loading,
+.contact-section-unique .contact-form-wrapper .error-message,
+.contact-section-unique .contact-form-wrapper .sent-message {
+  display: none;
+  margin: 1rem 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact-section-unique .contact-form-wrapper .sent-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.contact-section-unique .contact-form-wrapper .error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@media (max-width: 768px) {
+  .contact-section-unique .contact-info-box {
+    margin-bottom: 2rem;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1979,7 +2517,7 @@ section,
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
-} 
+}
 
 .portfolio-details .portfolio-info {
   background-color: var(--surface-color);
@@ -2794,4 +3332,432 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+
+/****************************************************************************************************/
+/*************************************** offices section ********************************************/
+
+/* Offices Section Styles - All classes are unique to avoid conflicts */
+
+.offices-main-section {
+  padding: 80px 0;
+  background-color: var(--background-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.offices-main-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(65, 84, 241, 0.05) 0%, rgba(1, 41, 112, 0.02) 100%);
+  z-index: 1;
+}
+
+.offices-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.offices-section-header {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: officesFadeInUp 0.8s ease-out;
+}
+
+.offices-section-title {
+  font-size: 2.5rem;
+  color: var(--heading-color);
+  margin-bottom: 15px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.offices-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-color), var(--heading-color));
+  border-radius: 2px;
+}
+
+.offices-section-subtitle {
+  font-size: 1.1rem;
+  color: var(--default-color);
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
+.offices-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.office-info-card {
+  background: var(--surface-color);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+  animation: officesFadeInUp 0.8s ease-out;
+  animation-fill-mode: both;
+}
+
+.office-info-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.office-info-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.office-info-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.office-info-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), var(--heading-color));
+}
+
+.office-info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(65, 84, 241, 0.15);
+}
+
+.office-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--accent-color), var(--heading-color));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.office-info-card:hover .office-icon-wrapper {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.office-icon-wrapper svg {
+  width: 35px;
+  height: 35px;
+  fill: white;
+}
+
+.office-card-title {
+  font-size: 1.5rem;
+  color: var(--heading-color);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.office-address-text {
+  color: var(--default-color);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.office-contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.office-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--default-color);
+  font-size: 0.95rem;
+}
+
+.office-detail-item svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--accent-color);
+  flex-shrink: 0;
+}
+
+.office-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--accent-color), var(--heading-color));
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.office-contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(65, 84, 241, 0.3);
+}
+
+.office-contact-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+}
+
+@keyframes officesFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .offices-main-section {
+    padding: 60px 0;
+  }
+
+  .offices-section-title {
+    font-size: 2rem;
+  }
+
+  .offices-grid-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .office-info-card {
+    padding: 30px 25px;
+  }
+}
+
+
+/* Values Cards Styles */
+.values-card {
+  background: var(--surface-color);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  border: 1px solid rgba(65, 84, 241, 0.1);
+  height: 100%;
+}
+
+.values-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(65, 84, 241, 0.15);
+  border-color: var(--accent-color);
+}
+
+.card-visual {
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innovation-visual {
+  background: linear-gradient(135deg, var(--accent-color), var(--heading-color));
+}
+
+.collaboration-visual {
+  background: linear-gradient(135deg, var(--heading-color), var(--accent-color));
+}
+
+.integrity-visual {
+  background: linear-gradient(135deg, var(--accent-color), #5a67f2);
+}
+
+.floating-element {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  top: 20px;
+  left: 30px;
+  animation: pulse-float 3s ease-in-out infinite;
+}
+
+.collaboration-visual .floating-element {
+  border-radius: 20px;
+  animation: rotate-float 4s ease-in-out infinite;
+}
+
+.integrity-visual .floating-element {
+  border-radius: 15px;
+  transform: rotate(45deg);
+  animation: spin-float 5s linear infinite;
+}
+
+.icon-container {
+  position: relative;
+  z-index: 2;
+  font-size: 3rem;
+  color: var(--contrast-color);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.values-card:hover .icon-container {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.card-number {
+  position: absolute;
+  top: -20px;
+  right: 1.5rem;
+  width: 40px;
+  height: 40px;
+  background: var(--surface-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(65, 84, 241, 0.2);
+}
+
+.values-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.values-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: width 0.4s ease;
+}
+
+.values-card:hover h3::after {
+  width: 50px;
+}
+
+.values-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--default-color);
+  margin: 0;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.values-card:hover p {
+  opacity: 1;
+}
+
+/* Animations */
+@keyframes pulse-float {
+
+  0%,
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: scale(1.05) translateY(-5px);
+    opacity: 0.8;
+  }
+}
+
+@keyframes rotate-float {
+
+  0%,
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(10deg) translateY(-8px);
+  }
+}
+
+@keyframes spin-float {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(405deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-visual {
+    height: 140px;
+  }
+
+  .card-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .values-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .values-card p {
+    font-size: 0.95rem;
+  }
+
+  .icon-container {
+    font-size: 2.5rem;
+  }
 }

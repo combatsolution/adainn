@@ -6,27 +6,37 @@
 * License: /license/
 */
 
-(function() {
+(function () {
   "use strict";
 
   const cards = document.querySelectorAll('.testimonial-item');
-let maxHeight = 0;
-cards.forEach(card => {
-  maxHeight = Math.max(maxHeight, card.offsetHeight);
-});
-cards.forEach(card => {
-  card.style.height = `${maxHeight}px`;
-});
+  let maxHeight = 0;
+  cards.forEach(card => {
+    maxHeight = Math.max(maxHeight, card.offsetHeight);
+  });
+  cards.forEach(card => {
+    card.style.height = `${maxHeight}px`;
+  });
 
 
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
+  let ulid = document.querySelector('#ulid')
+  let sitename = document.querySelector('.sitename')
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
     if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
     window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+
+    if (window.scrollY > 100) {
+      ulid.classList.remove('before-related')
+      sitename.classList.remove('sitenamewhite')
+    } else {
+      sitename.classList.add('sitenamewhite')
+      ulid.classList.add('before-related')
+    }
   }
 
   document.addEventListener('scroll', toggleScrolled);
@@ -62,7 +72,7 @@ cards.forEach(card => {
    * Toggle mobile nav dropdowns
    */
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
+    navmenu.addEventListener('click', function (e) {
       e.preventDefault();
       this.parentNode.classList.toggle('active');
       this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
@@ -128,13 +138,13 @@ cards.forEach(card => {
   /**
    * Init isotope layout and filters
    */
-  document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
+  document.querySelectorAll('.isotope-layout').forEach(function (isotopeItem) {
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
     let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
 
     let initIsotope;
-    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
+    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function () {
       initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
         itemSelector: '.isotope-item',
         layoutMode: layout,
@@ -143,8 +153,8 @@ cards.forEach(card => {
       });
     });
 
-    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-      filters.addEventListener('click', function() {
+    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function (filters) {
+      filters.addEventListener('click', function () {
         isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
         this.classList.add('filter-active');
         initIsotope.arrange({
@@ -162,7 +172,7 @@ cards.forEach(card => {
    * Init swiper sliders
    */
   function initSwiper() {
-    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+    document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
       let config = JSON.parse(
         swiperElement.querySelector(".swiper-config").innerHTML.trim()
       );
@@ -180,7 +190,7 @@ cards.forEach(card => {
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
-  window.addEventListener('load', function(e) {
+  window.addEventListener('load', function (e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
         setTimeout(() => {
@@ -200,6 +210,8 @@ cards.forEach(card => {
    */
   let navmenulinks = document.querySelectorAll('.navmenu a');
 
+
+
   function navmenuScrollspy() {
     navmenulinks.forEach(navmenulink => {
       if (!navmenulink.hash) return;
@@ -209,6 +221,8 @@ cards.forEach(card => {
       if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
         document.querySelectorAll('.navmenu a.active').forEach(link => link.classList.remove('active'));
         navmenulink.classList.add('active');
+
+
       } else {
         navmenulink.classList.remove('active');
       }
