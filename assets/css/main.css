@@ -1971,6 +1971,8 @@ section,
 }
 
 .testimonials .swiper-wrapper {
+ display: flex;
+  align-items: center;
   height: auto;
 }
 
@@ -2116,11 +2118,15 @@ section,
 /* Make swiper slides stretch equally */
 .swiper-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .swiper-slide {
   display: flex;
-  height: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust based on your layout */
+  
   /* Optional: to avoid overflow */
 }
 
@@ -2138,7 +2144,11 @@ section,
   height: auto;
 }
 
-.clients .swiper-slide img {
+.clients .swiper-slide img { 
+  max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+
   transition: 0.3s;
   opacity: 0.5;
 }
