@@ -1,10 +1,18 @@
-/**
-* Template Name: FlexStart
+/* Logo visibility for both black and white backgrounds */
+.logo img {
+  background: #fff;
+  border-radius: 12px;
+  padding: 6px 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10), 0 0 0 2px #fff;
+  transition: background 0.2s, box-shadow 0.2s;
+}
 
-* Updated: Nov 01 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: /license/
-*/
+body.dark-bg .logo img {
+  background: #222;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.20), 0 0 0 2px #222;
+}
+
+
 
 /*--------------------------------------------------------------
 # Font & Color Variables
@@ -1472,6 +1480,7 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
@@ -1971,8 +1980,6 @@ section,
 }
 
 .testimonials .swiper-wrapper {
- display: flex;
-  align-items: center;
   height: auto;
 }
 
@@ -2118,15 +2125,23 @@ section,
 /* Make swiper slides stretch equally */
 .swiper-wrapper {
   display: flex;
+}
+#clients .swiper-slide {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  height: 100px; /* or adjust based on your design */
+}
+
+#clients .swiper-slide img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .swiper-slide {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px; /* Adjust based on your layout */
-  
+  height: auto;
   /* Optional: to avoid overflow */
 }
 
@@ -2136,7 +2151,7 @@ section,
   flex-direction: column;
   justify-content: space-between;
   /* keep profile at bottom */
-  background: #fff;
+  background: #fff; 
   padding: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -2144,11 +2159,7 @@ section,
   height: auto;
 }
 
-.clients .swiper-slide img { 
-  max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-
+.clients .swiper-slide img {
   transition: 0.3s;
   opacity: 0.5;
 }

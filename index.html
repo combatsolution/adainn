@@ -1,1450 +1,1181 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Adainn Technologies</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title>AdaInn Techonologies</title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
 
-    <!-- Favicons --> 
-  <link rel="icon" href="assets/favicon/favicon-256x256.png" sizes="128x128" type="image/png">
+      <!-- Favicons -->
+      <link href="assets/img/favicon.png" rel="icon" />
+      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+      <!-- Vendor CSS Files -->
+      <link
+        href="assets/vendor/bootstrap/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
+      <link
+        href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+        rel="stylesheet"
+      />
+      <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+      <link
+        href="assets/vendor/glightbox/css/glightbox.min.css"
+        rel="stylesheet"
+      />
+      <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
+      <!-- icons -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+      <!-- icons ends -->
+      <!-- Main CSS File -->
+      <link href="assets/css/main.css" rel="stylesheet" />
+      <style>
+        .country-title {
+          border-left: 4px solid #0d6efd;
+          padding-left: 10px;
+          margin-bottom: 20px;
+          font-size: 1.5rem;
+        }
+    
+        .office-card {
+          transition: transform 0.2s ease;
+        }
+    
+        .office-card:hover {
+          transform: translateY(-5px);
+        }
+      </style>
+    </head>
+    
 
-    <!-- Vendor CSS Files -->
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <!-- icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <!-- icons ends -->
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
-
-  </head>
-  
-
-  <body class="index-page">
-    <header id="header" class="header d-flex align-items-center fixed-top">
-      <div
-        class="container-fluid container-xl position-relative d-flex align-items-center"
-      >
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/a-removebg-preview.png" alt="" width="80px" height="150px" />
-          <!-- <h1 class="sitename">Adainn Technologies</h1> -->
-        </a>
-
-        <nav id="navmenu" class="navmenu">
-          <ul id="ulid" class="before-related">
-            <li>
-              <a href="#hero" class="active">Home<br /></a>
-            </li>
-            
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <!-- <li><a href="blog.html">Blog</a></li> -->
-
-            <!-- <li><a href="#contact">Contact</a></li> -->
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
-        <a class="btn-getstarted flex-md-shrink-0" href="index.html#contact"
-          >Let's Talk</a
+    <body class="index-page">
+      <header id="header" class="header d-flex align-items-center fixed-top">
+        <div
+          class="container-fluid container-xl position-relative d-flex align-items-center"
         >
-      </div>
-    </header>
+          <a href="index.html" class="logo d-flex align-items-center me-auto">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="assets/img/a-removebg-preview.png" alt="" width="110px" height="160px" />
+            <!-- <h1 class="sitename">AdaInn Technologies</h1> -->
+          </a>
 
-    <main class="main">
-      <!-- Hero Section -->
-      <section id="hero" class="hero section">
-        <div class="container">
-          <div class="row gy-4">
-            <div
-              class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
-            >
-              <h1 data-aos="fade-up">
-                AI-powered solutions tailored to your business growth.
-              </h1>
-              <!-- <h1
-                data-aos="fade-up"
-                style="font-family: 'Brush Script MT', cursive"
-              >
-                Adainn Technologies
-              </h1> -->
-              <p data-aos="fade-up" data-aos-delay="100">
-                Smart Automation. Real Results. AI agents that streamline work,
-                cut costs, and boost efficiency.
-              </p>
+          <nav id="navmenu" class="navmenu">
+            <ul id="ulid" class="before-related">
+              <li>
+                <a href="#hero" class="active">Home<br /></a>
+              </li>
+              
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <!-- <li><a href="blog.html">Blog</a></li> -->
+
+              <!-- <li><a href="#contact">Contact</a></li> -->
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+
+          <a class="btn-getstarted flex-md-shrink-0" href="index.html#contact"
+            >Let's Talk</a
+          >
+        </div>
+      </header>
+
+      <main class="main">
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+          <div class="container">
+            <div class="row gy-4">
               <div
-                class="d-flex flex-column flex-md-row"
-                data-aos="fade-up"
-                data-aos-delay="200"
+                class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
               >
-                <a href="#contact" class="btn-get-started"
-                  >Get Started <i class="bi bi-arrow-right"></i
-                ></a>
-                <!-- <a
-                  href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                  class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"
-                  ><i class="bi bi-play-circle"></i><span>Watch Video</span></a
-                > -->
+                <h1 data-aos="fade-up">
+                  Unlocking Your Business Potential with Custom AI Solutions
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="100">
+                  We are an end-to-end AI consulting and development firm dedicated to creating intelligent systems that drive efficiency, growth, and measurable ROI.
+                </p>
+                <div
+                  class="d-flex flex-column flex-md-row"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+
+                  <a href="#contact" class="btn-get-started"
+                    >Get a Free Consultation <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 order-1 order-lg-2 hero-img"
+                data-aos="zoom-out"
+              >
               </div>
             </div>
-            <div
-              class="col-lg-6 order-1 order-lg-2 hero-img"
-              data-aos="zoom-out"
-            >
-              <!-- <img
-                src="assets/img/hero-img.png"
-                class="img-fluid animated"
-                alt=""
-              /> -->
-            </div>
           </div>
-        </div>
-      </section>
-      <!-- /Hero Section -->
+        </section>
+        <!-- /Hero Section -->  
 
- 
+        <!-- Services Section -->
+        <section id="services" class="services section">
 
-
-
-      <!-- Services Section -->
-      <section id="services" class="services section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>Services</h2>
-          <p>Check Our Services<br /></p>
+          <h2 class="text-center" style="font-size: 25px;">Our Services</h2>
+          <p style="font-size: 16px;">We offer a full spectrum of AI services, from strategic consultation to the development 
+            of custom models and intelligent applications that drive tangible business value.<br /></p>
         </div>
         <!-- End Section Title -->
 
         <div class="container">
           <div class="row gy-4">
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="service-item item-cyan position-relative">
+            <!-- Service Card 1 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item item-cyan position-relative h-100 d-flex flex-column">
                 <i class="bi bi-activity icon"></i>
-                <h3>Generative AI</h3>
-                <p>
-                  Unlock Creativity and Automation with Generative AI Solutions
-                </p>
-                <h6>
-                  Automate repetitive creative tasks with AI-driven workflows
-                </h6>
-                <h6>
-                  Seamless integration with your existing tools and platforms
-                </h6>
-
-                <a href="#" class="read-more stretched-link"
-                  ><span>Let's Talk</span> <i class="bi bi-arrow-right"></i
-                ></a>
+                <h3 class="text-center">AI Strategy & Roadmap</h3>
+                <p class="text-start">We don't just build technology—we build a plan. Our expert consultants partner with you to demystify AI, identify high-impact opportunities, and create a clear, actionable roadmap that aligns with your business objectives and budget.</p>
+                <ul class="text-start">
+                  <li>Business Process Analysis & Audits</li>
+                  <li>AI Feasibility & Opportunity Identification</li>
+                  <li>Technology Stack Assessment & Planning</li>
+                  <li>ROI Projections and Roadmaps</li>
+                </ul>
+                <div class="mt-auto">
+                  <a href="#contact" class="read-more stretched-link"><span>Start Your AI Journey</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
               </div>
             </div>
-            <!-- End Service Item -->
-            <!-- <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="service-item item-orange position-relative">
+            <!-- Service Card 2 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item item-orange position-relative h-100 d-flex flex-column">
                 <i class="bi bi-broadcast icon"></i>
-                <h3>IAM Services</h3>
-                <p>
-                  Securing Access Across Energy, Banking, Medical, and Retail
-                  Industries
-                </p>
-                <h6>
-                  Ensure secure and role-based access for sensitive data in
-                  Energy and Utilities.
-                </h6>
-                <h6>
-                  Centralized IAM platform integrated with cloud and hybrid
-                  environments.
-                </h6>
-
-                <a href="#" class="read-more stretched-link"
-                  ><span>Let's Talk</span> <i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
-            </div> -->
-        
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="service-item item-orange position-relative">
-                <i class="bi bi-broadcast icon"></i>
-                <h3>Agent & Bot Automation</h3>
-                <p>
-                  Intelligent agents designed to enhance productivity and
-                  automate processes across various industries.
-                </p>
-                <h6>Intelligent Search & Automation</h6>
-                <h6>Productivity-Enhancing Automation Tools</h6>
-
-                <a href="#" class="read-more stretched-link"
-                  ><span>Let's Talk</span> <i class="bi bi-arrow-right"></i
-                ></a>
+                <h3 class="text-center">AI Product & Model Development</h3>
+                <p class="text-start">Transform your vision into a reality with our end-to-end AI product and model development services. We build custom machine learning models and integrate them into scalable, production-ready products that solve complex business challenges.</p>
+                <ul class="text-start">
+                  <li>Custom Machine Learning Model Development</li>
+                  <li>End-to-End Product Design & Engineering</li>
+                  <li>MLOps and Model Deployment</li>
+                  <li>AI-Powered Feature Integration</li>
+                </ul>
+                <div class="mt-auto">
+                  <a href="#contact" class="read-more stretched-link"><span>Bring Your AI Vision to Life</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
               </div>
             </div>
-            <!-- End Service Item -->
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="service-item item-red position-relative">
+            <!-- Service Card 3 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item item-red position-relative h-100 d-flex flex-column">
                 <i class="bi bi-bounding-box-circles icon"></i>
-                <h3>Analytics & Research</h3>
-                <p>
-                  Advanced analytics and research tools to empower your business
-                  strategy with actionable insights.
-                </p>
-                <h6>Enhance Business Strategies</h6>
-                <h6>Gain Insights into Consumer Behavior</h6>
-
-                <a href="#" class="read-more stretched-link"
-                  ><span>Let's Talk</span> <i class="bi bi-arrow-right"></i
-                ></a>
+                <h3 class="text-center">AI-Powered Mobile & Web Apps</h3>
+                <p class="text-start">Create intelligent applications that deliver a superior user experience. We specialize in building AI-infused mobile and web applications that use features like predictive analytics, personalized recommendations, and computer vision to engage users and drive business growth.</p>
+                <ul class="text-start">
+                  <li>Custom App Design & Development</li>
+                  <li>User-centric UI/UX with AI Features</li>
+                  <li>Mobile & Web AI Integration</li>
+                  <li>Cross-Platform Solutions (iOS, Android, Web, Desktop)</li>
+                </ul>
+                <div class="mt-auto">
+                  <a href="#contact" class="read-more stretched-link"><span>Launch an AI-Powered App</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
               </div>
             </div>
-            <!-- End Service Item -->
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="service-item item-teal position-relative">
-                <i class="bi bi-easel icon"></i>
-                <h3>Product & Model Development</h3>
-                <p>
-                  End-to-end, customized AI model development — including
-                  training, fine-tuning, and deployment.
-                </p>
-                <h6>Tailored to Specific Business Needs</h6>
-                <h6>Integration with Existing Systems and Infrastructure</h6>
-
-                <a href="#" class="read-more stretched-link"
-                  ><span>Let's Talk</span> <i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-            <!-- End Service Item -->
-
-                <!-- End Service Item -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              <div class="service-item item-indigo position-relative">
+            <!-- Service Card 4 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item item-indigo position-relative h-100 d-flex flex-column">
                 <i class="bi bi-calendar4-week icon"></i>
-                <h3>Web & Mobile</h3>
-                <p>
-                  Building Intelligent, Responsive, and Secure Applications for
-                  All Industries
-                </p>
-                <h6>
-                  Create web and mobile apps powered by Generative AI for
-                  dynamic, personalized user experiences.
-                </h6>
-                <h6>
-                  Develop responsive, accessible, and cloud-ready applications
-                  tailored to your business needs.
-                </h6>
-                <a href="#" class="read-more stretched-link"
-                  ><span>Let's Talk</span> <i class="bi bi-arrow-right"></i
-                ></a>
+                <h3 class="text-center">Generative AI Solutions</h3>
+                <p class="text-start">Leverage the power of large language models and generative AI to automate creative tasks and enhance productivity. We build and deploy custom solutions for content generation, intelligent search, and knowledge management tailored to your specific needs.</p>
+                <ul class="text-start">
+                  <li>AI-Powered Content Generation (marketing copy, summaries)</li>
+                  <li>Customized Chatbots & Internal Knowledge Assistants</li>
+                  <li>AI-Driven Search & Information Retrieval</li>
+                  <li>Integration with Existing Workflows</li>
+                </ul>
+                <div class="mt-auto">
+                  <a href="#contact" class="read-more stretched-link"><span>Explore Generative AI</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
               </div>
             </div>
-            <!-- End Service Item -->
+            <!-- Service Card 5 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item item-teal position-relative h-100 d-flex flex-column">
+                <i class="bi bi-easel icon"></i>
+                <h3 class="text-center">Data Science & Predictive Analytics</h3>
+                <p class="text-start">Unlock the hidden value in your data with our advanced analytics and predictive modeling services. We transform raw data into actionable insights, helping you forecast trends, optimize operations, and make data-driven decisions with confidence.</p>
+                <ul class="text-start">
+                  <li>Predictive Modeling for Sales & Churn</li>
+                  <li>Prescriptive Analytics for Optimized Decision-Making</li>
+                  <li>Data Visualization & Interactive Dashboards</li>
+                  <li>Advanced Statistical Analysis & Forecasting</li>
+                </ul>
+                <div class="mt-auto">
+                  <a href="#contact" class="read-more stretched-link"><span>Unlock Business Insights</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Service Card 6 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item item-teal position-relative h-100 d-flex flex-column">
+                <i class="bi bi-easel icon"></i>
+                <h3 class="text-center">Computer Vision & Automation</h3>
+                <p class="text-start">Empower your operations with AI that can "see." We develop and implement computer vision solutions for quality control, anomaly detection, and process automation, helping you improve efficiency, reduce waste, and enhance safety.</p>
+                <ul class="text-start">
+                  <li>Automated Defect Detection & Visual Inspection</li>
+                  <li>Real-Time Anomaly Detection on Production Lines</li>
+                  <li>Smart Surveillance & Asset Monitoring</li>
+                  <li>Robotics and Process Automation</li>
+                </ul>
+                <div class="mt-auto">
+                  <a href="#contact" class="read-more stretched-link"><span>Enable AI-Powered Automation</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Service Card 7 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item item-teal position-relative h-100 d-flex flex-column">
+                <i class="bi bi-easel icon"></i>
+                <h3 class="text-center">Conversational AI & Chatbots</h3>
+                <p class="text-start">Go beyond simple chatbots with intelligent conversational AI. We build sophisticated virtual agents that can handle complex customer inquiries, personalize user experiences, and automate customer service, freeing your team for higher-value tasks.</p>
+                <ul class="text-start">
+                  <li>Multi-Channel Virtual Assistants (web, app, voice)</li>
+                  <li>Natural Language Processing (NLP) for Intent Recognition</li>
+                  <li>Sentiment Analysis for Customer Feedback</li>
+                  <li>Advanced Customer Service Automation</li>
+                </ul>
+                <div class="mt-auto">
+                  <a href="#contact" class="read-more stretched-link"><span>Build Your AI Assistant</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Service Card 8 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item item-teal position-relative h-100 d-flex flex-column">
+                <i class="bi bi-easel icon"></i>
+                <h3 class="text-center">Responsible AI & Governance</h3>
+                <p class="text-start">Navigate the ethical and regulatory landscape of AI with confidence. We provide consulting services to help you develop a robust AI governance framework, ensuring your solutions are fair, transparent, and compliant with all relevant industry standards.</p>
+                <ul class="text-start">
+                  <li>AI Risk Assessment & Bias Mitigation</li>
+                  <li>Ethics Framework Development & Audits</li>
+                  <li>Data Privacy and Compliance Consulting</li>
+                  <li>Transparency and Explainability Reporting</li>
+                </ul>
+                <div class="mt-auto">
+                  <a href="#contact" class="read-more stretched-link"><span>Build AI You Can Trust</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <style>
+          .service-item h3 {
+            font-size: 1.18rem;
+            font-weight: 600;
+            margin: 10px 0 8px 0;
+            text-align: center;
+          }
+          .service-item ul {
+            padding-left: 1.2rem;
+            margin-bottom: 0.5rem;
+          }
+          .service-item p, .service-item ul, .service-item li {
+            text-align: left;
+          }
+          @media (max-width: 991.98px) {
+            .service-item {
+              min-height: unset !important;
+            }
+          }
+        </style>
       </section>
       <!-- /Services Section -->
 
-      
 
+        <!-- Portfolio Section -->
 
-
-      <!-- Portfolio Section -->
-      <section id="portfolio" class="portfolio section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
-          <p>Check our latest work</p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container">
-          <div
-            class="isotope-layout"
-            data-default-filter="*"
-            data-layout="masonry"
-            data-sort="original-order"
-          >
-            <ul
-              class="portfolio-filters isotope-filters"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <!-- <li data-filter=".filter-product">Product</li> -->
-              <!-- <li data-filter=".filter-branding">Branding</li>  -->
-
-            </ul>
-            <!-- End Portfolio Filters -->
-
-            <div
-              class="row gy-4 isotope-container"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app  "
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                  height="50%"
-                    src="assets/img/portfolio/aiexpert.jpg"
-                   class="img-fluid flex-grow-1"
-                      style="object-fit: cover; width: 100%; height: 300px;"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>AI Expert Talk agent</h4>
-                     <p>Your quick guide to AI insights and answers</p>
-                    <a
-                      href="assets/img/portfolio/robo.jpg"
-                      title="AI Expert Talk agent"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i 
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
+        <section id="portfolio" class="portfolio section">
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Portfolio</h2>
+            <p>Check our latest work</p>
+          </div>
+          <div class="container">
+            <div class="row gy-4">
+              <!-- Card 1 -->
+              <div class="col-md-12 col-lg-6">
+                <div class="card portfolio-card flex-row align-items-center shadow-sm h-100">
+                  <div class="card-body d-flex flex-row align-items-center justify-content-between">
+                    <div class="portfolio-info text-start flex-grow-1 pe-3">
+                      <h4 class="portfolio-title mb-2">AI Expert Talk agent</h4>
+                      <p class="portfolio-desc mb-0">Your quick guide to AI insights and answers</p>
+                    </div>
+                    <div class="portfolio-img-wrapper ms-3">
+                      <img src="assets/img/portfolio/aiexpert.jpg" class="img-fluid rounded portfolio-img clickable-img" alt="AI Expert Talk agent" style="width: 150px; height: 150px; object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#portfolioModal1" />
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- End Portfolio Item -->
+              <!-- Card 2 -->
+              <div class="col-md-12 col-lg-6">
+                <div class="card portfolio-card flex-row align-items-center shadow-sm h-100">
+                  <div class="card-body d-flex flex-row align-items-center justify-content-between">
+                    <div class="portfolio-info text-start flex-grow-1 pe-3">
+                      <h4 class="portfolio-title mb-2">AI Chat Workflow with Slack Integration</h4>
+                      <p class="portfolio-desc mb-0">N8N</p>
+                    </div>
+                    <div class="portfolio-img-wrapper ms-3">
+                      <img src="assets/img/portfolio/chat.png" class="img-fluid rounded portfolio-img clickable-img" alt="AI Chat Workflow with Slack Integration" style="width: 150px; height: 150px; object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#portfolioModal2" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-md-12 col-lg-6">
+                <div class="card portfolio-card flex-row align-items-center shadow-sm h-100">
+                  <div class="card-body d-flex flex-row align-items-center justify-content-between">
+                    <div class="portfolio-info text-start flex-grow-1 pe-3">
+                      <h4 class="portfolio-title mb-2">Bot Builder</h4>
+                      <p class="portfolio-desc mb-0">For Creating Chat Bots</p>
+                    </div>
+                    <div class="portfolio-img-wrapper ms-3">
+                      <img src="assets/img/26921852_Hand holding phone with conversation of girl and chat bot.jpg" class="img-fluid rounded portfolio-img clickable-img" alt="Bot Builder" style="width: 150px; height: 150px; object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#portfolioModal3" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="col-md-12 col-lg-6">
+                <div class="card portfolio-card flex-row align-items-center shadow-sm h-100">
+                  <div class="card-body d-flex flex-row align-items-center justify-content-between">
+                    <div class="portfolio-info text-start flex-grow-1 pe-3">
+                      <h4 class="portfolio-title mb-2">Inteligent Document Processing</h4>
+                      <p class="portfolio-desc mb-0">Extract, classify, and structure data with AI</p>
+                    </div>
+                    <div class="portfolio-img-wrapper ms-3">
+                      <img src="assets/img/portfolio/idp.jpg" class="img-fluid rounded portfolio-img clickable-img" alt="Inteligent Document Processing" style="width: 150px; height: 150px; object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#portfolioModal4" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="col-md-12 col-lg-6">
+                <div class="card portfolio-card flex-row align-items-center shadow-sm h-100">
+                  <div class="card-body d-flex flex-row align-items-center justify-content-between">
+                    <div class="portfolio-info text-start flex-grow-1 pe-3">
+                      <h4 class="portfolio-title mb-2">Inteligent Document Processing</h4>
+                      <p class="portfolio-desc mb-0">Extract, classify, and structure data with AI</p>
+                    </div>
+                    <div class="portfolio-img-wrapper ms-3">
+                      <img src="assets/img/portfolio/docs.png" class="img-fluid rounded portfolio-img clickable-img" alt="Inteligent Document Processing" style="width: 150px; height: 150px; object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#portfolioModal5" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="col-md-12 col-lg-6">
+                <div class="card portfolio-card flex-row align-items-center shadow-sm h-100">
+                  <div class="card-body d-flex flex-row align-items-center justify-content-between">
+                    <div class="portfolio-info text-start flex-grow-1 pe-3">
+                      <h4 class="portfolio-title mb-2">Mammoth Technologies</h4>
+                      <p class="portfolio-desc mb-0">AI-powered branding and digital transformation</p>
+                    </div>
+                    <div class="portfolio-img-wrapper ms-3">
+                      <img src="assets/img/16541.jpg" class="img-fluid rounded portfolio-img clickable-img" alt="Mammoth Technologies" style="width: 150px; height: 150px; object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#portfolioModal6" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Modals -->
+          <!-- Modal 1 -->
+          <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="portfolioModal1Label">AI Expert Talk agent</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="assets/img/portfolio/aiexpert.jpg" class="img-fluid rounded mb-3" style="max-height: 350px; object-fit: contain;" alt="AI Expert Talk agent" />
+                  <p>Your quick guide to AI insights and answers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal 2 -->
+          <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="portfolioModal2Label">AI Chat Workflow with Slack Integration</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="assets/img/portfolio/chat.png" class="img-fluid rounded mb-3" style="max-height: 350px; object-fit: contain;" alt="AI Chat Workflow with Slack Integration" />
+                  <p>N8N</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal 3 -->
+          <div class="modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="portfolioModal3Label">Bot Builder</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="assets/img/26921852_Hand holding phone with conversation of girl and chat bot.jpg" class="img-fluid rounded mb-3" style="max-height: 350px; object-fit: contain;" alt="Bot Builder" />
+                  <p>For Creating Chat Bots</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal 4 -->
+          <div class="modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="portfolioModal4Label">Inteligent Document Processing</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="assets/img/portfolio/idp.jpg" class="img-fluid rounded mb-3" style="max-height: 350px; object-fit: contain;" alt="Inteligent Document Processing" />
+                  <p>Extract, classify, and structure data with AI</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal 5 -->
+          <div class="modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="portfolioModal5Label">Inteligent Document Processing</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="assets/img/portfolio/docs.png" class="img-fluid rounded mb-3" style="max-height: 350px; object-fit: contain;" alt="Inteligent Document Processing" />
+                  <p>Extract, classify, and structure data with AI</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal 6 -->
+          <div class="modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="portfolioModal6Label">Mammoth Technologies</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="assets/img/16541.jpg" class="img-fluid rounded mb-3" style="max-height: 350px; object-fit: contain;" alt="Mammoth Technologies" />
+                  <p>AI-powered branding and digital transformation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <style>
+            .portfolio-card {
+              border-radius: 18px;
+              margin-bottom: 24px;
+              background: #fff;
+              transition: box-shadow 0.2s;
+            }
+            .portfolio-card:hover {
+              box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+            }
+            .portfolio-title {
+              font-size: 1.2rem;
+              font-weight: 700;
+              color: #0d6efd;
+            }
+            .portfolio-desc {
+              color: #444;
+              font-size: 1rem;
+            }
+            @media (max-width: 767.98px) {
+              .portfolio-card.flex-row {
+                flex-direction: column !important;
+                text-align: center;
+              }
+              .portfolio-img-wrapper {
+                margin: 0 auto 1rem auto !important;
+              }
+              .portfolio-info {
+                padding-right: 0 !important;
+              }
+            }
+          </style>
+        </section>
+        <!-- /Portfolio Section -->
+
+
+            <!-- About Section -->
+        <section id="about" class="about section">
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Our Story. Our Mission. Your Success.</h2>
+            <p>A partnership in innovation, built on trust and a passion for technology.<br /></p>
+          </div>
+          <div class="container" data-aos="fade-up">
+            <div class="row gx-0">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="content">
+                  <h2>Bridging the Gap Between Technology and Business.</h2>
+                  <p>AdaInn was founded on a simple, yet powerful idea: that AI should be a strategic asset, not just a complex tool. We saw a need for a partner that could not only build intelligent systems but also seamlessly integrate them into a business’s unique workflow.</p>
+                  
+                  <p>We specialize in delivering AI-powered business solutions that drive efficiency, intelligence, and growth. Our expertise spans from strategic consultation and custom development to automation, analytics, and IoT. We believe in crafting solutions that are as innovative as they are practical, ensuring measurable impact and a strong return on your investment.</p>
+                  <p>Our name, <strong>AdaInn</strong>, is a testament to our core philosophy: <strong>Adaptation</strong> to your unique business environment and <strong>Innovation</strong> to create solutions that are truly future-proof. It’s a reflection of our commitment to evolving alongside our clients and the ever-changing digital world.</p>
+                  
+                  <!-- <div class="text-center text-lg-start">
+                    <a
+                      href="#"
+                      class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
+                    >
+                      <span>Let's Talk</span>
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div> -->
+                </div>
+              </div>
+
+              <!-- <div
+                class="col-lg-6 d-flex align-items-center"
+                data-aos="zoom-out"
+                data-aos-delay="200"
+              >
+                <img
+                  src="assets/img/ai-chip-intelligence-technology-deep-learning.jpg"
+                  class=""
+                  width="600px"
+                  height="450px"
+                
+                />
+              </div> -->
+            </div>
+          </div>
+        </section>
+        <!-- /About Section -->
+
+        <!-- Values Section -->
+        <section id="values" class="values section">
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+        <h2>Our Core Values</h2>
+        <p>More than just words. It's how we do business.</p>
+        </div>
+          <!-- End Section Title -->
+
+          <div class="container">
+            <style>
+              .values-card {
+                background: #fff;
+                border-radius: 18px;
+                box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+                padding: 28px 18px 22px 18px;
+                text-align: center;
+                min-height: 320px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                transition: box-shadow 0.2s;
+              }
+              .values-card:hover {
+                box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+              }
+              .values-card .icon-container {
+                background: #f0f4fa;
+                border-radius: 50%;
+                width: 56px;
+                height: 56px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 18px auto;
+                box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+              }
+              .values-card .icon-container img {
+                width: 32px;
+                height: 32px;
+                object-fit: contain;
+              }
+              .values-card .card-content h3 {
+                font-size: 1.18rem;
+                font-weight: 600;
+                margin: 10px 0 8px 0;
+              }
+              .values-card .card-content p {
+                font-size: 0.98rem;
+                color: #444;
+              }
+            </style>
+            <div class="row gy-3">
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="values-card">
+                  <div class="icon-container">
+                    <img src="assets/img/values/adaptation.png" alt="Adaptation" />
+                  </div>
+                  <div class="card-content">                 
+                    <h3>Adaptation</h3>
+                    <p>
+                      We continuously adapt to meet your unique needs and ever-changing market. This ensures our solutions are not just relevant today, but built for tomorrow.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="values-card">
+                  <div class="icon-container">
+                    <img src="assets/img/values/innovation.png" alt="Innovation" />
+                  </div>
+                  <div class="card-content">
+                    <h3>Innovation</h3>
+                    <p>
+                      We embrace creativity and emerging technologies to design forward-thinking solutions tailored to your unique business needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="values-card">
+                  <div class="icon-container">
+                    <img src="assets/img/values/integrity.png" alt="Integrity" />
+                  </div>
+                  <div class="card-content">
+                    <h3>Integrity</h3>
+                    <p>
+                      We operate with a commitment to honesty and transparency. With us, you can trust that we will always act in your best interests, upholding the highest ethical standards in every project.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="values-card">
+                  <div class="icon-container">
+                    <img src="assets/img/values/collaboration.png" alt="Collaboration" />
+                  </div>
+                  <div class="card-content">
+                    <h3>Collaboration</h3>
+                    <p>
+                      We believe the best solutions are built together. Our success is a direct result of our close partnership with you, fostered through open communication and mutual trust at every stage.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="values-card">
+                  <div class="icon-container">
+                    <img src="assets/img/values/customer-centricity.png" alt="Customer-Centricity" />
+                  </div>
+                  <div class="card-content">
+                    <h3>Customer-Centricity</h3>
+                    <p>
+                      We prioritize your goals and your users in every solution we create. We're dedicated to delivering experiences that are thoughtful, effective, and built for lasting value.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
               
-              <!-- <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/tender.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Tender Management System </h4>
-                    <p>Smart, secure, and scalable solution for end-to-end tender management</p>
-                    <a
-                      href="assets/img/portfolio/tender.jpg"
-                      title="Tender Management System"
-                      data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div> -->
-              <!-- End Portfolio Item -->
-
-              <!-- <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/warehouse.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Warehouse Copilot</h4>
-                    <p>Real-time AI support to streamline your operations</p>
-                    <a
-                      href="assets/img/portfolio/warehouse.png"
-                      title="Warehouse Copilot"
-                      data-gallery="portfolio-gallery-branding"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div> -->
-              <!-- End Portfolio Item -->
-
-             
-              <!-- End Portfolio Item -->
-
-              <div 
-  class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app "
->
-  <div class="portfolio-content  d-flex flex-column">
-    <img
-      src="assets/img/portfolio/chat.png"
-      class="img-fluid flex-grow-1"
- style="object-fit: cover; width: 100%; height: 300px;"
-      alt="AI Chat"
-    />
-    <div class="portfolio-info">
-      <h4>AI Chat Workflow with Slack Integration</h4>
-      <p>N8N</p>
-      <a
-        href="assets/img/portfolio/n8n.png"
-        title="AI Chat Workflow with Slack Integration"
-        data-gallery="portfolio-gallery-app"
-        class="glightbox preview-link"
-      >
-        <i class="bi bi-zoom-in"></i>
-      </a>
-      <a
-        href="portfolio-details.html"
-        title="More Details"
-        class="details-link"
-      >
-        <i class="bi bi-link-45deg"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-              <!-- End Portfolio Item -->
-
-              <!-- <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/logic.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Logistic Management Tool</h4>
-                    <p>Smarter routing, tracking, and delivery</p>
-                    <a
-                      href="assets/img/portfolio/logic.png"
-                      title="Logistic Management Tool"
-                      data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div> -->
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/26921852_Hand holding phone with conversation of girl and chat bot.jpg"
-                    class="img-fluid"
-                    alt="" style="object-fit: cover; width: 100%; height: 300px;"
-                  />
-                  <div class="portfolio-info">
-                    <h4>Bot Builder</h4>
-                    <p>For Creating Chat Bots</p>
-                    <a
-                      href="assets/img/portfo.jpeg"
-                      title="Branding 2"
-                      data-gallery="portfolio-gallery-branding"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              
-            
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app "
-              >
-                <div class="portfolio-content ">
-                  <img
-                    src="assets/img/portfolio/idp.jpg"
-                    class="img-fluid flex-grow-1"
-                     style="object-fit: cover; width: 100%; height: 300px;"
-
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Inteligent Document Processing</h4>
-                    <p>Extract, classify, and structure data with AI</p>
-                    <a
-                      href="assets/img/portfolio/docs.png"
-                      title="Inteligent Document Processing"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/docs.png  "
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Inteligent Document Processing</h4>
-                    <p>Extract, classify, and structure data with AI</p>
-                    <a
-                      href="assets/img/portfolio/docs.png"
-                      title="Inteligent Document Processing"
-                      data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/16541.jpg"
-                    class="img-fluid"
-                    alt=""
-                    style="object-fit: cover; width: 100%; height: 300px;"
-                  />
-                  <div class="portfolio-info">
-                    <h4>Mammoth Technologies</h4>
-                    <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                    <a
-                      href="assets/img/image (71).png"
-                      title="Branding 2"
-                      data-gallery="portfolio-gallery-branding"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-            
-            <!-- End Portfolio Container -->
-          </div>
-        </div>
-      </section>
-      <!-- /Portfolio Section -->
-
-
-           <!-- About Section -->
-      <section id="about" class="about section">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>About</h2>
-          <p>About Us<br /></p>
-        </div>
-        <div class="container" data-aos="fade-up">
-          <div class="row gx-0">
-            <div
-              class="col-lg-6 d-flex flex-column justify-content-center"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="content">
-                <h3>Who We Are</h3>
-                <h2>
-                  Adainn Technologies positions itself as a company offering
-                  AI-driven business solutions, focusing on automation,
-                  analytics, IoT, development, and more.
-                </h2>
-                <p>
-                  We prioritize customer-centric AI chatbots and analytics,
-                  fostering partnerships for mutual success. We’re committed to
-                  pushing tech boundaries for efficiency and intelligence.
-                </p>
-                <!-- <div class="text-center text-lg-start">
-                  <a
-                    href="#"
-                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
-                  >
-                    <span>Let's Talk</span>
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
-                </div> -->
-              </div>
-            </div>
-
-            <div
-              class="col-lg-6 d-flex align-items-center"
-              data-aos="zoom-out"
-              data-aos-delay="200"
-            >
-              <img
-                src="assets/img/ai-chip-intelligence-technology-deep-learning.jpg"
-                class=""
-                width="600px"
-                height="450px"
-              
-              />
             </div>
           </div>
-        </div>
-      </section>
-      <!-- /About Section -->
+        </section>
+        <!-- /Values Section -->
+    
 
-      <!-- Values Section -->
-      <section id="values" class="values section">
-        <!-- Section Title -->
-        
-        <!-- End Section Title -->
-
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="values-card">
-                <div class="card-visual innovation-visual">
-                  <div class="floating-element"></div>
-                  <div class="icon-container">
-                    <i class="fas fa-lightbulb"></i>
-                  </div>
-                </div>
-                <div class="card-content">
-                  <div class="card-number">01</div>
-                  <h3>Innovation</h3>
-                  <p>
-                    We embrace creativity and cutting-edge technologies to design
-                    solutions that are ahead of the curve and tailored to unique
-                    business needs.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="values-card">
-                <div class="card-visual collaboration-visual">
-                  <div class="floating-element"></div>
-                  <div class="icon-container">
-                    <i class="fas fa-handshake"></i>
-                  </div>
-                </div>
-                <div class="card-content">
-                  <div class="card-number">02</div>
-                  <h3>Collaboration</h3>
-                  <p>
-                    We work as partners with our clients, fostering open
-                    communication and trust to ensure success at every step of the
-                    journey.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="values-card">
-                <div class="card-visual integrity-visual">
-                  <div class="floating-element"></div>
-                  <div class="icon-container">
-                    <i class="fas fa-shield-alt"></i>
-                  </div>
-                </div>
-                <div class="card-content">
-                  <div class="card-number">03</div>
-                  <h3>Integrity</h3>
-                  <p>
-                    We operate with honesty, transparency, and a commitment to
-                    doing what's right — always putting our clients' best
-                    interests first.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-              <div class="values-card">
-               <div class="card-visual collaboration-visual">
-                  <div class="floating-element"></div>
-                  <div class="icon-container">
-                    <img src="https://cdn-icons-png.flaticon.com/512/189/189792.png" alt="Adaptation" style="width:48px;height:48px;object-fit:contain;" />
-                  </div>
-                </div>
-                <div class="card-content">
-                  <div class="card-number">04</div>
-                  <h3>Adaptation</h3>
-                  <p>
-                    We continuously evolve and adapt to changing environments, ensuring our solutions remain relevant and effective in a dynamic world.
-                  </p>
-                </div>
-              </div>
-            </div>
+        <!-- Clients Section -->
+        <section id="clients" class="clients section" >
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Clients</h2>
+            <p>Trusted by<br /></p>
           </div>
-        </div>
-      </section>
-      <!-- /Values Section -->
+          <!-- End Section Title -->
 
-      <!-- Stats Section -->
-      <!-- <section id="stats" class="stats section">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="d-flex justify-content-center " style="gap: 20px;">
-            <div class="" >
-              <div class="stats-item d-flex align-items-center w-100 h-100">
-                <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
-                <div >
-                  <div class="d-flex">
-                    <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="30"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span><span>+</span>
-                  </div>
-
-                  <p>Happy Clients</p>
-                </div>
-              </div>
-            </div>
-          
-
-            <div class="">
-              <div class="stats-item d-flex align-items-center w-100 h-100">
-                <i
-                  class="bi bi-journal-richtext color-orange flex-shrink-0"
-                  style="color: #ee6c20"
-                ></i>
-                <div>
-                 <!-- <div class="d-flex">
-                    <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="50"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span><span>+</span>
-                  </div> 
-                  <p>Projects Done</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-
-
-            <!-- <div class="col-lg-3 col-md-6">
-              <div class="stats-item d-flex align-items-center w-100 h-100">
-                <i
-                  class="bi bi-people color-pink flex-shrink-0"
-                  style="color: #bb0852"
-                ></i>
-                <div>
-                  <div class="d-flex">
-                    <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="40"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span><span>+</span>
-                  </div>
-                  <p>Skilled Professionals</p>
-                </div>
-              </div>
-            </div> -->
-            <!-- End Stats Item -->
-          </div>
-        </div>
-      </section> -->
-      <!-- /Stats Section -->
-
-      <!-- Testimonials Section -->
-      
-      <!-- /Testimonials Section -->
-
-      <!-- Team Section -->
-      
-      <!-- /Team Section -->
-
-      <!-- Clients Section -->
-      <section id="clients" class="clients section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Clients</h2>
-          <p>We work with clients<br /></p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 40
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
                   },
-                  "480": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 60
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
                   },
-                  "640": {
-                    "slidesPerView": 4,
-                    "spaceBetween": 80
-                  },
-                  "992": {
-                    "slidesPerView": 6,
-                    "spaceBetween": 120
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 2,
+                      "spaceBetween": 40
+                    },
+                    "480": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 60
+                    },
+                    "640": {
+                      "slidesPerView": 4,
+                      "spaceBetween": 80
+                    },
+                    "992": {
+                      "slidesPerView": 6,
+                      "spaceBetween": 120
+                    }
                   }
                 }
-              }
-            </script>
-            <div class="swiper-wrapper align-items-center ">
-              <div class="swiper-slide"   >
-                <img
-                  src="assets/img/clients/ashoka.png"
-                  class="Ashoka"
-                  alt=""
-                  width="60px"
-                  height="40px"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/nabani.png"
-                  class="nabani"
-                  alt=""
-                  width="100px"
-                  height="70px"
-                />
-              </div>  
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/octocore.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-             
+              </script>
+              <div class="swiper-wrapper align-items-center img-container">
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/clients/ashoka.png"
+                    class="Ashoka"
+                    alt=""
+                    width="70px"
+                    height="50px"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/clients/nabani.png"
+                    class="nabani"
+                    alt=""
+                    width="100px"
+                    height="70px"
+                  />
+                </div>  
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/clients/octocore.png"
+                    class="nabani"
+                    alt=""
+                    width="100px"
+                    height="70px"
+                  />
+                </div>  
               
-              
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-      <!-- /Clients Section -->
-
-            <!-- Faq Section -->
-      <section id="faq" class="faq section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>F.A.Q</h2>
-          <p>Frequently Asked Questions</p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="faq-container">
-                <div class="faq-item faq-active">
-                  <h3>What services does Adainn Technologies offer?</h3>
-                  <div class="faq-content">
-                    <p>
-                      We provide AI-driven business solutions including
-                      Intelligent Agents, AI Model Development, Analytics &
-                      Research, Web Development, Industrial IoT Solutions, and
-                      Generative AI capabilities — all designed to help
-                      businesses improve productivity, efficiency, and
-                      decision-making.
-                    </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
-
-                <div class="faq-item">
-                  <h3>How can Intelligent Agents help my business?</h3>
-                  <div class="faq-content">
-                    <p>
-                      Our intelligent agents automate repetitive tasks, enhance
-                      search capabilities, and integrate with your existing
-                      systems to improve efficiency and reduce operational
-                      costs.
-                    </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
-
-                <div class="faq-item">
-                  <h3>Do you build custom AI models?</h3>
-                  <div class="faq-content">
-                    <p>
-                      Yes. We specialize in end-to-end custom AI model
-                      development — from data collection and training to
-                      fine-tuning, deployment, and ongoing monitoring — all
-                      tailored to your specific business needs.
-                    </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
+                
               </div>
+              <div class="swiper-pagination"></div>
             </div>
-            <!-- End Faq Column-->
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="faq-container">
-                <div class="faq-item">
-                  <h3>Do you offer website development services?</h3>
-                  <div class="faq-content">
-                    <p>
-                      Yes. We design and build user-friendly, responsive, and
-                      secure websites tailored to your business objectives, with
-                      ongoing maintenance and updates.
-                    </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
-
-                <div class="faq-item">
-                  <h3>
-                    What is Industrial IoT, and how can it help my operations?
-                  </h3>
-                  <div class="faq-content">
-                    <p>
-                      Industrial IoT (IIoT) connects your equipment and devices
-                      to the cloud, enabling real-time monitoring, predictive
-                      maintenance, and automated processes to improve uptime and
-                      reduce costs.
-                    </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
-
-                <div class="faq-item">
-                  <h3>How do I get started?</h3>
-                  <div class="faq-content">
-                    <p>
-                      Simply reach out to us through the <a href="#contact"> Contact Form </a> on our
-                      website, and our team will schedule a consultation to
-                      understand your requirements and recommend the best
-                      solution.
-                    </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
-              </div>
-            </div>
-            <!-- End Faq Column-->
           </div>
-        </div>
-      </section>
-      <!-- /Faq Section -->
+        </section>
+        <!-- /Clients Section -->
+
+    
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Contact</h2>
+            <p>Contact Us</p>
+          </div>
+          <!-- End Section Title -->
+
+      <div class="container contact-section-unique" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+              <div class="col-lg-6">
+                  <div class="contact-info-box" data-aos="fade-right" data-aos-delay="100">
+                      <h3 class="contact-title">Get In Touch</h3>
+                      <p class="contact-description">We'd love to hear from you! Whether you have a question about our services, need support, or just want to say hello, don't hesitate to reach out.</p>
+                      
+                      <!-- <div class="contact-detail-item">
+                          <i class="fas fa-map-marker-alt contact-icon"></i>
+                          <div class="contact-content">
+                              <h5 class="contact-label">Our Address</h5>
+                              <p class="contact-text">123 Business Street, Suite 100<br>
+                              New York, NY 10001, USA</p>
+                          </div>
+                      </div> -->
+                      
+                      <!-- <div class="contact-detail-item">
+                          <i class="fas fa-phone contact-icon"></i>
+                          <div class="contact-content">
+                              <h5 class="contact-label">Call Us</h5>
+                              <p class="contact-text">+1 (555) 123-4567<br>
+                              Mon - Fri, 9:00 AM - 6:00 PM</p>
+                          </div>
+                      </div> -->
+                      
+                      <div class="contact-detail-item">
+                          <i class="fas fa-envelope contact-icon"></i>
+                          <div class="contact-content">
+                              <h5 class="contact-label">Email Us</h5>
+                              <p class="contact-text">hello@adainn.com<br>
+                              </p>
+                          </div>
+                      </div>
+                      
+                      <!-- <div class="contact-detail-item">
+                          <i class="fas fa-clock contact-icon"></i>
+                          <div class="contact-content">
+                              <h5 class="contact-label">Business Hours</h5>
+                              <p class="contact-text">Monday - Friday: 9:00 AM - 6:00 PM<br>
+                              Saturday: 10:00 AM - 4:00 PM</p>
+                          </div>
+                      </div> -->
+                      
+                      <div class="contact-social-section">
+                          <h5 class="social-title">Follow Us</h5>
+                          <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                          <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                          <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                          <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                          <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-6">
+                  <form
+                      action="forms/contact.php"
+                      method="post"
+                      class="php-email-form contact-form-wrapper"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                  >
+                      <div class="row gy-4">
+                          <div class="col-md-6">
+                              <input
+                                  type="text"
+                                  name="name"
+                                  class="form-control"
+                                  placeholder="Your Name"
+                                  required=""
+                              />
+                          </div>
+
+                          <div class="col-md-6">
+                              <input
+                                  type="email"
+                                  class="form-control"
+                                  name="email"
+                                  placeholder="Your Email"
+                                  required=""
+                              />
+                          </div>
+
+                          <div class="col-12">
+                              <input
+                                  type="text"
+                                  class="form-control"
+                                  name="subject"
+                                  placeholder="Subject"
+                                  required=""
+                              />
+                          </div>
+
+                          <div class="col-12">
+                              <textarea
+                                  class="form-control"
+                                  name="message"
+                                  rows="6"
+                                  placeholder="Message"
+                                  required=""
+                              ></textarea>
+                          </div>
+
+                          <div class="col-12 text-center">
+                              <div class="loading">Loading</div>
+                              <div class="error-message"></div>
+                              <div class="sent-message">
+                                  Your message has been sent. We aim to respond to all inquiries within one business day. Thank you!
+                              </div>
+
+                              <button type="submit" class="contact-submit-btn">Send Message</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              <!-- End Contact Form -->
+          </div>
+      </div>
+
+        </section>
+        <!-- /Contact Section -->
 
 
-      <!-- Contact Section -->
-      <section id="contact" class="contact section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
-        </div>
-        <!-- End Section Title -->
-
-    <div class="container contact-section-unique" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-            <div class="col-lg-6">
-                <div class="contact-info-box" data-aos="fade-right" data-aos-delay="100">
-                    <h3 class="contact-title">Get In Touch</h3>
-                    <p class="contact-description">We'd love to hear from you! Whether you have a question about our services, need support, or just want to say hello, don't hesitate to reach out.</p>
-                    
-                    <!-- <div class="contact-detail-item">
-                        <i class="fas fa-map-marker-alt contact-icon"></i>
-                        <div class="contact-content">
-                            <h5 class="contact-label">Our Address</h5>
-                            <p class="contact-text">123 Business Street, Suite 100<br>
-                            New York, NY 10001, USA</p>
-                        </div>
-                    </div> -->
-                    
-                    <!-- <div class="contact-detail-item">
-                        <i class="fas fa-phone contact-icon"></i>
-                        <div class="contact-content">
-                            <h5 class="contact-label">Call Us</h5>
-                            <p class="contact-text">+1 (555) 123-4567<br>
-                            Mon - Fri, 9:00 AM - 6:00 PM</p>
-                        </div>
-                    </div> -->
-                    
-                    <div class="contact-detail-item">
-                        <i class="fas fa-envelope contact-icon"></i>
-                        <div class="contact-content">
-                            <h5 class="contact-label">Email Us</h5>
-                            <p class="contact-text">info@yourcompany.com<br>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- <div class="contact-detail-item">
-                        <i class="fas fa-clock contact-icon"></i>
-                        <div class="contact-content">
-                            <h5 class="contact-label">Business Hours</h5>
-                            <p class="contact-text">Monday - Friday: 9:00 AM - 6:00 PM<br>
-                            Saturday: 10:00 AM - 4:00 PM</p>
-                        </div>
-                    </div> -->
-                    
-                    <div class="contact-social-section">
-                        <h5 class="social-title">Follow Us</h5>
-                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <form
-                    action="forms/contact.php"
-                    method="post"
-                    class="php-email-form contact-form-wrapper"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                >
-                    <div class="row gy-4">
-                        <div class="col-md-6">
-                            <input
-                                type="text"
-                                name="name"
-                                class="form-control"
-                                placeholder="Your Name"
-                                required=""
-                            />
-                        </div>
-
-                        <div class="col-md-6">
-                            <input
-                                type="email"
-                                class="form-control"
-                                name="email"
-                                placeholder="Your Email"
-                                required=""
-                            />
-                        </div>
-
-                        <div class="col-12">
-                            <input
-                                type="text"
-                                class="form-control"
-                                name="subject"
-                                placeholder="Subject"
-                                required=""
-                            />
-                        </div>
-
-                        <div class="col-12">
-                            <textarea
-                                class="form-control"
-                                name="message"
-                                rows="6"
-                                placeholder="Message"
-                                required=""
-                            ></textarea>
-                        </div>
-
-                        <div class="col-12 text-center">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">
-                                Your message has been sent. Thank you!
-                            </div>
-
-                            <button type="submit" class="contact-submit-btn">Send Message</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <!-- End Contact Form -->
-        </div>
-    </div>
-
-      </section>
-      <!-- /Contact Section -->
-
-
-    <!-- offices sections starts here -->
-<section class="offices-main-section">
-  <div class="offices-container">
-    <div class="container section-title" data-aos="fade-up" style="padding-bottom: 10px;">
-      <h2>Offices</h2>
+  <section class="container py-5">
+    <div class="container section-title" data-aos="fade-up">
+      <h2 class="text-center">Locations</h2>
       <p>Our Offices</p>
     </div>
 
-    <div class="offices-section-header">
-      <p class="offices-section-subtitle">
-        We have strategically located offices to serve you better. Visit us at any of our convenient locations or get in touch with our dedicated teams.
-      </p>
-    </div>
+    <!-- Country: Australia -->
+    <div class="mb-5">
+      <h3 class="country-title">🇦🇺 Australia</h3>
+      <div class="row g-4">
 
-    <div class="offices-grid-layout">
-
-      <!-- Navi Mumbai -->
-      <div class="office-info-card">
-        <div class="office-icon-wrapper">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-          </svg>
-        </div>
-        <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="India Flag" style="position:absolute;top:10px;right:10px;width:40px;height:28px;object-fit:contain;box-shadow:0 1px 4px rgba(0,0,0,0.08);border-radius:4px;" />
-        <h3 class="office-card-title">Navi Mumbai Office</h3>
-        <p class="office-address-text">
-          Shop No. 7, Plot No. 12, Old VSNL Colony,<br>
-          Sector - 17, Yamuna CHS, Kamothe,<br>
-          Panvel, Navi Mumbai, Maharashtra – 410209
-        </p>
-        <div class="office-contact-details">
-          <!-- <div class="office-detail-item">
-            <svg viewBox="0 0 24 24">
-              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-            </svg>
-            enquiry@combatsolutions.co.in
-          </div> -->
-        </div>
-      </div>
-
-      <!-- Nashik -->
-      <div class="office-info-card">
-        <div class="office-icon-wrapper">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-          </svg>
-        </div>
-        <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="India Flag" style="position:absolute;top:10px;right:10px;width:40px;height:28px;object-fit:contain;box-shadow:0 1px 4px rgba(0,0,0,0.08);border-radius:4px;" />
-        <h3 class="office-card-title">Nashik Office</h3>
-        <p class="office-address-text">
-          Kapadia Commercial Complex, Office No. 23/24,<br>
-          Opp. Kalika Mandir, Gadkari Chowk,<br>
-          Near Tata Motors, Nashik, Maharashtra – 422002
-        </p>
-        <div class="office-contact-details">
-          <!-- <div class="office-detail-item">
-            <svg viewBox="0 0 24 24">
-              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-            </svg>
-            combatsolutionsai@gmail.com
-          </div> -->
-        </div>
-      </div>
-
-      <!-- Australia -->
-      <div class="office-info-card">
-        <div class="office-icon-wrapper">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-          </svg>
+        <!-- Sydney -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card office-card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Sydney</h5>
+              <p class="card-text">
+                Level 1, 457-459 Elizabeth Street<br/> Surry Hills, NSW 2010
+              </p>
+              <p class="card-text">📞 +61 437 054 501<br>✉️ hello@adainn.com</p>
+              <!-- <a href="#" class="card-link text-decoration-none">View on Map</a> -->
+            </div>
           </div>
-            <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg" alt="Australia Flag" style="position:absolute;top:10px;right:10px;width:40px;height:28px;object-fit:contain;box-shadow:0 1px 4px rgba(0,0,0,0.08);border-radius:4px;" />
-        
-        <h3 class="office-card-title">Australia Office</h3>
-            <p class="office-address-text">
-            LEVEL 1/457-459 ELIZABETH STREET, <br>
-            SURRY HILLS NSW 2010<br>
-          </p>
-        <div class="office-contact-details">
-          <!-- <div class="office-detail-item">
-            <svg viewBox="0 0 24 24">
-              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-            </svg>
-            sales@combatsolutions.co.in
-          </div> -->
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Country: India -->
+    <div class="mb-5">
+      <h3 class="country-title">🇮🇳 India</h3>
+      <div class="row g-4">
+
+        <!-- Nashik -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card office-card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Nashik</h5>
+              <p class="card-text">
+                Office No. 23/24, Kapadia Commercial Complex, Opp. Kalika Mandir, Gadkari Chowk, Near Tata Motors,<br>Nashik, Maharashtra 422002
+              </p>
+              <p class="card-text">📞 +91 87932 21873<br>✉️ hello@adainn.com</p>
+              <!-- <a href="#" class="card-link text-decoration-none">View on Map</a> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Navi Mumbai -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card office-card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Navi Mumbai</h5>
+              <p class="card-text">
+                Shop No. 7, Plot No. 12, Old VSNL Colony,
+  Sector - 17, Yamuna CHS, Kamothe, Panvel,
+  <br/>Navi Mumbai, Maharashtra 410209
+              </p>
+              <p class="card-text">📞 +91 98702 13651<br>✉️ hello@adainn.com</p>
+              <!-- <a href="#" class="card-link text-decoration-none">View on Map</a> -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-    <!-- offices sections end here -->
+  </section>
 
 
-    </main>
+      <!-- offices sections end here -->
 
-    <footer id="footer" class="footer">
+
+      </main>
+
+      <footer id="footer" class="footer">
+      
+
     
+          <div class="row gy-4">
+            <div class="col-lg-3 col-md-6 footer-about mx-5">
+              <a href="index.html" class="d-flex align-items-center">
+                <span class="sitename">AdaInn Technologies<span>
+              </a>
+              <div class="footer-contact pt-3 ">
+                <p>Level 1, 457-459 Elizabeth Street</p>
+                <p>Surry Hills, NSW 2010</p>
+                <p class="mt-3">
+                  <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+                </p>
+                <p>
+                  <strong>Email:</strong>
+                  <a href="mailto:combatsolutionsai@gmail.com">
+                    <span style="font-size: 16px"
+                      >combatsolutionsai@gmail.com</span
+                    >
+                  </a>
+                </p>
+              </div>
+            </div>
 
-      <!-- <div class="container footer-top">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="d-flex align-items-center">
-              <span class="sitename">Adainn Technologies<span>
-            </a>
-            <div class="footer-contact pt-3">
-              <p>Level 1, 457-459 Elizabeth Street</p>
-              <p>Surry Hills, NSW 2010</p>
-              <p class="mt-3">
-                <strong>Phone:</strong> <span>+1 5589 55488 55</span>
-              </p>
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero">Home</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+                <li>  <i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a> </li>
+                <li> <i class="bi bi-chevron-right"></i>
+                <a href="#">Terms of service</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Web & Mobile </a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Generative AI</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">IAM</a>
+                </li> 
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Digital Marketing</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12">
+              <h4>Follow Us</h4>
               <p>
-                <strong>Email:</strong>
-                <a href="mailto:combatsolutionsai@gmail.com">
-                  <span style="font-size: 16px"
-                    >combatsolutionsai@gmail.com</span
-                  >
-                </a>
+            Join us and experience firsthand the power of customized solutions
+             designed to drive efficiency and effectiveness. Together, we can navigate the complexities of the digital landscape
               </p>
+              <div class="social-links d-flex">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
             </div>
           </div>
+        </div> 
 
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
-              <li>  <i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a> </li>
-              <li> <i class="bi bi-chevron-right"></i>
-               <a href="#">Terms of service</a>
-              </li>
-            </ul>
+        <div class="container copyright text-center mt-4">
+          <p>
+            © 2025 <span>Copyright</span>
+            <strong class="px-1 sitename">AdaInn Technologies</strong>
+            <span>All Rights Reserved</span>
+          </p>
+          <div class="credits">
+            Designed by <a href="#">AdaInn Technologies</a> 
           </div>
+        </div> 
+      </footer>
 
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li>
-                <i class="bi bi-chevron-right"></i>
-                <a href="#">Web & Mobile </a>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i>
-                <a href="#">Generative AI</a>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i>
-                <a href="#">IAM</a>
-              </li> 
-              <li>
-                <i class="bi bi-chevron-right"></i>
-                <a href="#">Digital Marketing</a>
-              </li>
-            </ul>
-          </div>
+      <!-- Scroll Top -->
+      <a
+        href="#"
+        id="scroll-top"
+        class="scroll-top d-flex align-items-center justify-content-center"
+        ><i class="bi bi-arrow-up-short"></i
+      ></a>
 
-          <div class="col-lg-4 col-md-12">
-            <h4>Follow Us</h4>
-            <p>
-           Join us and experience firsthand the power of customized solutions designed to drive efficiency and effectiveness. Together, we can navigate the complexities of the digital landscape
-            </p>
-            <div class="social-links d-flex">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </div> -->
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+      <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-      <div class="container copyright text-center mt-4">
-        <p>
-          © 2025 <span>Copyright</span>
-          <strong class="px-1 sitename">Adainn Technologies</strong>
-          <span>All Rights Reserved</span>
-        </p>
-        <div class="credits">
-          Designed by <a href="#">Adainn Technologies</a> 
-        </div>
-      </div> 
-    </footer>
+      <!-- Main JS File -->
+      <script src="assets/js/main.js"></script>
+          <script>
+          // Alt Features AI Image Carousel - Scoped to avoid conflicts
+          const altFeaturesAiImages = document.querySelectorAll('#alt-features .alt-features-ai-image');
+          let altFeaturesCurrentIndex = 0;
 
-    <!-- Scroll Top -->
-    <a
-      href="#"
-      id="scroll-top"
-      class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+          function showNextAltFeaturesImage() {
+              if (altFeaturesAiImages.length > 0) {
+                  altFeaturesAiImages[altFeaturesCurrentIndex].classList.remove('alt-features-ai-active');
+                  altFeaturesCurrentIndex = (altFeaturesCurrentIndex + 1) % altFeaturesAiImages.length;
+                  altFeaturesAiImages[altFeaturesCurrentIndex].classList.add('alt-features-ai-active');
+              }
+          }
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+          const altFeaturesInterval = setInterval(showNextAltFeaturesImage, 2500);
 
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
-        <script>
-        // Alt Features AI Image Carousel - Scoped to avoid conflicts
-        const altFeaturesAiImages = document.querySelectorAll('#alt-features .alt-features-ai-image');
-        let altFeaturesCurrentIndex = 0;
+          // Alt Features Particle System - Scoped to avoid conflicts
+          function createAltFeaturesParticle() {
+              const altFeaturesParticlesContainer = document.querySelector('#alt-features .alt-features-particles');
+              if (altFeaturesParticlesContainer) {
+                  const particle = document.createElement('div');
+                  particle.className = 'alt-features-particle';
+                  particle.style.left = Math.random() * 100 + '%';
+                  particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                  altFeaturesParticlesContainer.appendChild(particle);
 
-        function showNextAltFeaturesImage() {
-            if (altFeaturesAiImages.length > 0) {
-                altFeaturesAiImages[altFeaturesCurrentIndex].classList.remove('alt-features-ai-active');
-                altFeaturesCurrentIndex = (altFeaturesCurrentIndex + 1) % altFeaturesAiImages.length;
-                altFeaturesAiImages[altFeaturesCurrentIndex].classList.add('alt-features-ai-active');
-            }
-        }
+                  setTimeout(() => {
+                      if (particle.parentNode) {
+                          particle.remove();
+                      }
+                  }, 5000);
+              }
+          }
 
-        const altFeaturesInterval = setInterval(showNextAltFeaturesImage, 2500);
+          const altFeaturesParticleInterval = setInterval(createAltFeaturesParticle, 400);
 
-        // Alt Features Particle System - Scoped to avoid conflicts
-        function createAltFeaturesParticle() {
-            const altFeaturesParticlesContainer = document.querySelector('#alt-features .alt-features-particles');
-            if (altFeaturesParticlesContainer) {
-                const particle = document.createElement('div');
-                particle.className = 'alt-features-particle';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
-                altFeaturesParticlesContainer.appendChild(particle);
+          // Interactive hover effects for floating icons - Scoped to alt-features section
+          function handleAltFeaturesMouseMove(e) {
+              const altFeaturesFloatingIcons = document.querySelectorAll('#alt-features .alt-features-floating-icon');
+              const altFeaturesSection = document.querySelector('#alt-features');
+              
+              if (altFeaturesSection && altFeaturesFloatingIcons.length > 0) {
+                  const rect = altFeaturesSection.getBoundingClientRect();
+                  const mouseX = (e.clientX - rect.left) / rect.width;
+                  const mouseY = (e.clientY - rect.top) / rect.height;
 
-                setTimeout(() => {
-                    if (particle.parentNode) {
-                        particle.remove();
-                    }
-                }, 5000);
-            }
-        }
+                  altFeaturesFloatingIcons.forEach((icon, index) => {
+                      const speed = (index + 1) * 0.3;
+                      const x = (mouseX - 0.5) * speed;
+                      const y = (mouseY - 0.5) * speed;
+                      icon.style.transform = `translate(${x}px, ${y}px)`;
+                  });
+              }
+          }
 
-        const altFeaturesParticleInterval = setInterval(createAltFeaturesParticle, 400);
+          document.addEventListener('mousemove', handleAltFeaturesMouseMove);
 
-        // Interactive hover effects for floating icons - Scoped to alt-features section
-        function handleAltFeaturesMouseMove(e) {
-            const altFeaturesFloatingIcons = document.querySelectorAll('#alt-features .alt-features-floating-icon');
-            const altFeaturesSection = document.querySelector('#alt-features');
-            
-            if (altFeaturesSection && altFeaturesFloatingIcons.length > 0) {
-                const rect = altFeaturesSection.getBoundingClientRect();
-                const mouseX = (e.clientX - rect.left) / rect.width;
-                const mouseY = (e.clientY - rect.top) / rect.height;
+          // Cleanup function to prevent memory leaks
+          function cleanupAltFeatures() {
+              clearInterval(altFeaturesInterval);
+              clearInterval(altFeaturesParticleInterval);
+              document.removeEventListener('mousemove', handleAltFeaturesMouseMove);
+          }
 
-                altFeaturesFloatingIcons.forEach((icon, index) => {
-                    const speed = (index + 1) * 0.3;
-                    const x = (mouseX - 0.5) * speed;
-                    const y = (mouseY - 0.5) * speed;
-                    icon.style.transform = `translate(${x}px, ${y}px)`;
-                });
-            }
-        }
+          // Clean up when page is unloaded
+          window.addEventListener('beforeunload', cleanupAltFeatures);
+          
+      </script>
+  <!-- Tidio Chat -->
+<script src="//code.tidio.co/your_unique_code.js" async></script>
 
-        document.addEventListener('mousemove', handleAltFeaturesMouseMove);
 
-        // Cleanup function to prevent memory leaks
-        function cleanupAltFeatures() {
-            clearInterval(altFeaturesInterval);
-            clearInterval(altFeaturesParticleInterval);
-            document.removeEventListener('mousemove', handleAltFeaturesMouseMove);
-        }
-
-        // Clean up when page is unloaded
-        window.addEventListener('beforeunload', cleanupAltFeatures);
-    </script>
-  </body>
-</html>
+    </body>
+  </html>
