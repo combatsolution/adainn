@@ -1,16 +1,6 @@
 /* Logo visibility for both black and white backgrounds */
-.logo img {
-  background: #fff;
-  border-radius: 12px;
-  padding: 6px 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.10), 0 0 0 2px #fff;
-  transition: background 0.2s, box-shadow 0.2s;
-}
 
-body.dark-bg .logo img {
-  background: #222;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.20), 0 0 0 2px #222;
-}
+
 
 
 
