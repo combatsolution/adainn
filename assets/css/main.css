@@ -1507,9 +1507,31 @@ section,
   font-size: 18px;
 }
 
+/* purple */
+
+.services .service-item.item-primary {
+  border-bottom: 3px solid #4154f1;
+}
+
+.services .service-item.item-primary .icon {
+  color: #4154f1;
+  /* background: rgba(253, 126, 20, 0.1); */
+}
+
+.services .service-item.item-primary .read-more {
+  color: #4154f1;
+}
+
+.services .service-item.item-primary:hover {
+  background: #4154f1;
+}
+
+
+
 .services .service-item.item-cyan {
   border-bottom: 3px solid #0dcaf0;
 }
+
 
 .services .service-item.item-cyan .icon {
   color: #0dcaf0;
@@ -1611,6 +1633,8 @@ section,
 
 .services .service-item:hover h3,
 .services .service-item:hover p,
+.services .service-item:hover ul,
+.services .service-item:hover li,
 .services .service-item:hover .read-more {
   color: #fff;
 }
@@ -2323,7 +2347,7 @@ section,
 
 /* Contact Section Specific Styles - Namespace: contact-section-unique */
 .contact-section-unique .contact-info-box {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #667eea 0%, #4154f1 100%);
   border-radius: 15px;
   padding: 2.5rem;
   color: white;
@@ -2459,7 +2483,7 @@ section,
 }
 
 .contact-section-unique .contact-form-wrapper .contact-submit-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #667eea 0%, #4154f1 100%);
   border: none;
   padding: 15px 40px;
   border-radius: 50px;
