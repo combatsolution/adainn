@@ -16,9 +16,9 @@
   /* Background color for the entire website, including individual sections */
   --default-color: #444444;
   /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #012970;
+  --heading-color: #4154f1;
   /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #4154f1;
+  --accent-color: #012970;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -1509,6 +1509,7 @@ section,
 .services .service-item h3 {
   font-size: 24px;
   font-weight: 700;
+  color:var(--accent-color);
 }
 
 .services .service-item .read-more {
@@ -1843,9 +1844,10 @@ section,
 # Portfolio Section
 --------------------------------------------------------------*/
 
-/* Card hover effect */
+/* Card hover effect */ 
 .portfolio-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .portfolio-card:hover {
@@ -2745,6 +2747,7 @@ section,
 .service-details h3 {
   font-size: 26px;
   font-weight: 700;
+  
 }
 
 .service-details p {
