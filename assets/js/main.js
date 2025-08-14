@@ -6,6 +6,7 @@
 * License: /license/
 */
 
+
 (function () {
   "use strict";
 
@@ -18,6 +19,8 @@
     card.style.height = `${maxHeight}px`;
   });
 
+
+  
 
   /**
    * Apply .scrolled class to the body as the page is scrolled down
@@ -232,3 +235,6 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+

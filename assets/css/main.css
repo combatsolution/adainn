@@ -93,7 +93,6 @@ h6 {
 }
 
 
-
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
@@ -157,14 +156,22 @@ h6 {
   z-index: 997;
 }
 
+
+
 .header .logo {
   line-height: 1;
+}
+
+.header .logo #black-logo{
+ display: none; /* Hide black logo initially */
 }
 
 .header .logo img {
   max-height: 70px;
   margin-right: 8px;
 }
+
+ 
 
 .header .logo h1 {
   font-size: 30px;
@@ -194,6 +201,7 @@ h6 {
 @media (max-width: 1200px) {
   .header .logo {
     order: 1;
+    color: var(--contrast-color);
   }
 
   .header .btn-getstarted {
@@ -822,13 +830,15 @@ section,
 }
 
 .section-title h2 {
-  font-size: 13px;
+  font-size: 30px;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 900;
   padding: 8px 20px;
   margin: 0;
-  background: color-mix(in srgb, var(--accent-color), transparent 90%);
-  color: var(--accent-color);
+  /* background: color-mix(in srgb, var(--accent-color), transparent 90%); */
+  /* color: var(--accent-color); */
+
+  color: var(--heading-color);
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -836,9 +846,9 @@ section,
 }
 
 .section-title p {
-  color: var(--heading-color);
+  color: var(--accent-color);
   margin: 10px 0 0 0;
-  font-size: 32px;
+  font-size: px;
   font-weight: 700;
   font-family: var(--heading-font);
 }
@@ -2170,11 +2180,13 @@ section,
 
 .clients .swiper-slide img {
   transition: 0.3s;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .clients .swiper-slide img:hover {
-  opacity: 1;
+  transform: scale(1.1);
+  opacity: 0.8;
+  
 }
 
 .clients .swiper-wrapper {
@@ -2394,7 +2406,7 @@ section,
   padding: 1rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   transition: all 0.3s ease;
 }
 

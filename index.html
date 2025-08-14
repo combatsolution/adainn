@@ -57,11 +57,15 @@
 <body class="index-page">
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/a-removebg-preview.png" alt="" width="110px" height="160px" />
-        <!-- <h1 class="sitename">AdaInn Technologies</h1> -->
+
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+
+      <a href="index.html" class="logo d-flex justify-content='flex-start' me-auto">
+        <img id="white-logo" src="assets/img/whitelogo.png" alt="White Logo" width="110" height="160" />
+        <img id="black-logo" src="assets/img/blacklogo.png" alt="Black Logo" width="110" height="160" />
       </a>
+      <!-- <h1 class="sitename">AdaInn Technologies</h1> -->
+
 
       <nav id="navmenu" class="navmenu">
         <ul id="ulid" class="before-related">
@@ -244,7 +248,7 @@
             </div>
           </div>
           <!-- Service Card 7 -->
-          <div class="col-lg-4 col-md-6">
+          <!-- <div class="col-lg-4 col-md-6">
             <div class="service-item item-primary position-relative h-100 d-flex flex-column">
               <i class="bi bi-chat-dots icon"></i>
               <h3 class="text-center">Conversational AI & Chatbots</h3>
@@ -262,9 +266,9 @@
                     class="bi bi-arrow-right"></i></a>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- Service Card 8 -->
-          <div class="col-lg-4 col-md-6">
+          <!-- <div class="col-lg-4 col-md-6">
             <div class="service-item item-primary position-relative h-100 d-flex flex-column">
               <i class="bi bi-shield-check icon"></i>
               <h3 class="text-center">Responsible AI & Governance</h3>
@@ -282,10 +286,10 @@
                     class="bi bi-arrow-right"></i></a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
-      
+
       <style>
         .service-item h3 {
           font-size: 1.18rem;
@@ -442,24 +446,24 @@
               <h5 class="modal-title" id="portfolioModal1Label">AI Expert Talk agent</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body text-left">
-              <div style="text-align: center;">
-                <img src="assets/img/portfolio/aiexpert.jpg" class="img-fluid rounded mb-3"
-                  style="max-height: 350px; object-fit: contain;" alt="AI Expert Talk agent" />
+            <div class="modal-body">
+              <div class="row align-items-center">
+                <div class="col-md-5 text-center mb-3 mb-md-0">
+                  <img src="assets/img/portfolio/aiexpert.jpg" class="img-fluid rounded"
+                    style="max-width: 220px; max-height: 140px; object-fit: contain;" alt="AI Expert Talk agent" />
+                </div>
+                <div class="col-md-7">
+                  <p><b>Industry:</b> Education</p>
+                  <p><b>Technologies:</b> OpenAI API, LangChain, n8n, Twilio, Meta WhatsApp API</p>
+                  <p><b>Business Benefit:</b> Students and professionals often struggle to get quick, accurate,
+                    and context-relevant expert advice, slowing learning and decision-making.</p>
+                  <p>
+                    <b>Solution:</b> AI-powered virtual expert trained
+                    on domain-specific data to deliver instant, accurate answers via web and messaging platforms.
+                  </p>
+                </div>
               </div>
-
-              <p><b>Industry:</b> Education</p>
-              <p><b>Technologies:</b> OpenAI API, LangChain, n8n, Twilio, Meta WhatsApp API</p>
-              <p><b> Business Benefit:</b> Students and professionals often struggle to get quick, accurate,
-                and context-relevant expert advice, slowing learning and decision-making.</p>
-
-              <p>
-                <b>Solution:</b> AI-powered virtual expert trained
-                on domain-specific data to deliver instant, accurate answers via web and messaging platforms.
-              </p>
             </div>
-
-
           </div>
         </div>
       </div>
@@ -472,22 +476,25 @@
               <h5 class="modal-title" id="portfolioModal2Label">Doctor's Automation System</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body text-left">
-              <div style="text-align: center;">
-                <img src="assets/img/portfolio/chat.png" class="img-fluid rounded mb-3"
-                  style="max-height: 350px; object-fit: contain;" alt="AI Expert Talk agent" />
+            <div class="modal-body">
+              <div class="row align-items-center">
+                <div class="col-md-5 text-center mb-3 mb-md-0">
+                  <img src="assets/img/portfolio/chat.png" class="img-fluid rounded"
+                    style="max-width: 220px; max-height: 140px; object-fit: contain;"
+                    alt="Doctor's Automation System" />
+                </div>
+                <div class="col-md-7">
+                  <p><b>Industry:</b> Healthcare</p>
+                  <p><b>Technologies:</b> n8n, Twilio, Meta API, OpenAI API</p>
+                  <p><b>Business Benefit:</b> Healthcare providers face
+                    inefficiencies in patient management, leading to longer wait times and lower patient satisfaction.
+                  </p>
+                  <p>
+                    <b>Solution:</b> Modular healthcare management
+                    system with AI agents to automate patient workflows, and improve care coordination.
+                  </p>
+                </div>
               </div>
-
-              <p><b>Industry:</b> Healthcare</p>
-              <p><b>Technologies:</b> n8n, Twilio, Meta API, OpenAI API</p>
-
-              <p><b> Business Benefit:</b> Healthcare providers face
-                inefficiencies in patient management, leading to longer wait times and lower patient satisfaction.</p>
-
-              <p>
-                <b>Solution:</b> Modular healthcare management
-                system with AI agents to automate patient workflows, and improve care coordination.
-              </p>
             </div>
           </div>
         </div>
@@ -501,23 +508,25 @@
               <h5 class="modal-title" id="portfolioModal3Label">Jnanic</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body text-left">
-              <div style="text-align: center;">
-                <img src="assets/img/26921852_Hand holding phone with conversation of girl and chat bot.jpg"
-                  class="img-fluid rounded mb-3" style="max-height: 350px; object-fit: contain;"
-                  alt="AI Expert Talk agent" />
+            <div class="modal-body">
+              <div class="row align-items-center">
+                <div class="col-md-5 text-center mb-3 mb-md-0">
+                  <img src="assets/img/26921852_Hand holding phone with conversation of girl and chat bot.jpg"
+                    class="img-fluid rounded" style="max-width: 220px; max-height: 140px; object-fit: contain;"
+                    alt="Jnanic" />
+                </div>
+                <div class="col-md-7">
+                  <p><b>Industry:</b> Business Automation</p>
+                  <p><b>Technologies:</b> React.js, OpenAI API, LangGraph, Qdrant DB, PostgreSQL, Ollama </p>
+                  <p><b>Business Benefit:</b> Businesses
+                    lose time and resources building automation tools from scratch, delaying go-to-market for AI
+                    initiatives.</p>
+                  <p>
+                    <b>Solution:</b> No-code bot creation platform enabling rapid design, testing,
+                    and deployment of AI-powered bots for customer service, lead generation, and internal automation.
+                  </p>
+                </div>
               </div>
-
-              <p><b>Industry:</b> Business Automation</p>
-              <p><b>Technologies:</b> React.js, OpenAI API, LangGraph, Qdrant DB, PostgreSQL, Ollama </p>
-
-              <p><b> Business Benefit:</b> Businesses
-                lose time and resources building automation tools from scratch, delaying go-to-market for AI
-                initiatives.</p>
-              <p>
-                <b>Solution:</b> No-code bot creation platform enabling rapid design, testing,
-                and deployment of AI-powered bots for customer service, lead generation, and internal automation.
-              </p>
             </div>
           </div>
         </div>
@@ -531,20 +540,23 @@
               <h5 class="modal-title" id="portfolioModal4Label">Intelligent Document Processing (IDP)</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body text-left">
-              <div style="text-align: center;">
-                <img src="assets/img/portfolio/idp.jpg" class="img-fluid rounded mb-3"
-                  style="max-height: 350px; object-fit: contain;" alt="AI Expert Talk agent" />
+            <div class="modal-body">
+              <div class="row align-items-center">
+                <div class="col-md-5 text-center mb-3 mb-md-0">
+                  <img src="assets/img/portfolio/idp.jpg" class="img-fluid rounded"
+                    style="max-width: 220px; max-height: 140px; object-fit: contain;"
+                    alt="Intelligent Document Processing" />
+                </div>
+                <div class="col-md-7">
+                  <p><b>Industry:</b> Enterprise Automation / FinTech </p>
+                  <p><b>Technologies:</b> Document AI, Tesseract OCR, OpenAI API, Apache NiFi, PostgreSQL </p>
+                  <p><b>Business Benefit:</b> Manual document handling is time-consuming,
+                    error-prone, and delays operational workflows in finance and enterprise processes. </p>
+                  <p><b>Solution:</b> AI-driven system to ingest, classify, and extract structured data from documents,
+                    with validation workflows and API-ready output for seamless integration.
+                  </p>
+                </div>
               </div>
-
-              <p><b>Industry:</b> Enterprise Automation / FinTech </p>
-              <p><b>Technologies:</b> Document AI, Tesseract OCR, OpenAI API, Apache NiFi,, PostgreSQL </p>
-              <p><b> Business Benefit:</b> Manual document handling is time-consuming,
-                error-prone, and delays operational workflows in finance and enterprise processes. </p>
-
-              <p><b>Solution:</b> AI-driven system to ingest, classify, and extract structured data from documents,
-                with validation workflows and API-ready output for seamless integration.
-              </p>
             </div>
           </div>
         </div>
@@ -558,20 +570,23 @@
               <h5 class="modal-title" id="portfolioModal5Label">Nabni AI</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body text-left">
-              <div style="text-align: center;">
-                <img src="assets/img/portfolio/docs.png" class="img-fluid rounded mb-3"
-                  style="max-height: 350px; object-fit: contain;" alt="AI Expert Talk agent" />
+            <div class="modal-body">
+              <div class="row align-items-center">
+                <div class="col-md-5 text-center mb-3 mb-md-0">
+                  <img src="assets/img/portfolio/docs.png" class="img-fluid rounded"
+                    style="max-width: 220px; max-height: 140px; object-fit: contain;" alt="Nabni AI" />
+                </div>
+                <div class="col-md-7">
+                  <p><b>Industry:</b> Real Estate </p>
+                  <p><b>Technologies:</b> Document AI, Open AI, LangGraph, Qdrant DB, PostgreSQL </p>
+                  <p><b>Business Benefit:</b> Construction projects suffer from
+                    delays and cost overruns due to poor coordination and resource mismanagement. </p>
+                  <p>
+                    <b>Solution:</b> AI-based construction project management platform with scheduling,
+                    live progress tracking, and smart resource allocation to ensure timely delivery.
+                  </p>
+                </div>
               </div>
-
-              <p><b>Industry:</b> Real Estate </p>
-              <p><b>Technologies:</b> Document AI, Open AI, LangGraph, Qdrant DB, PostgreSQL </p>
-              <p><b> Business Benefit:</b> Construction projects suffer from
-                delays and cost overruns due to poor coordination and resource mismanagement. </p>
-              <p>
-                <b>Solution:</b> AI-based construction project management platform with scheduling,
-                live progress tracking, and smart resource allocation to ensure timely delivery.
-              </p>
             </div>
           </div>
         </div>
@@ -585,61 +600,77 @@
               <h5 class="modal-title" id="portfolioModal6Label">Mammoth Technologies</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body text-left">
-              <div style="text-align: center;">
-                <img src="assets/img/16541.jpg" class="img-fluid rounded mb-3"
-                  style="max-height: 350px; object-fit: contain;" alt="AI Expert Talk agent" />
+            <div class="modal-body">
+              <div class="row align-items-center">
+                <div class="col-md-5 text-center mb-3 mb-md-0">
+                  <img src="assets/img/16541.jpg" class="img-fluid rounded"
+                    style="max-width: 220px; max-height: 140px; object-fit: contain;" alt="Mammoth Technologies" />
+                </div>
+                <div class="col-md-7">
+                  <p><b>Industry:</b> Mining </p>
+                  <p><b>Technologies:</b> Python, Docker, REST APIs </p>
+                  <p><b>Business Benefit:</b> Mining companies often face high downtime and asset losses due to poor
+                    tool
+                    visibility and unplanned maintenance. </p>
+                  <p>
+                    <b>Solution:</b> Comprehensive tool management system that tracks inventory, schedules preventive
+                    maintenance,
+                    and analyzes usage patterns to extend equipment life and reduce downtime.
+                  </p>
+                </div>
               </div>
-
-              <p><b>Industry:</b> Mining </p>
-              <p><b>Technologies:</b> Python, Docker, REST APIs </p>
-              <p><b> Business Benefit:</b> Mining companies often face high downtime and asset losses due to poor tool
-                visibility and unplanned maintenance. </p>
-              <p>
-              <p><b>Solution:</b> Comprehensive tool management system that tracks inventory, schedules preventive
-                maintenance,
-                and analyzes usage patterns to extend equipment life and reduce downtime.
-              </p>
             </div>
           </div>
         </div>
       </div>
-
       <style>
-        .portfolio-card {
-          border-radius: 18px;
-          margin-bottom: 24px;
-          background: #fff;
-          transition: box-shadow 0.2s;
+        /* Portfolio Modal Layout Improvements */
+        .modal-content {
+          border-radius: 14px;
         }
 
-        .portfolio-card:hover {
-          box-shadow: 0 6px 32px rgba(0, 0, 0, 0.10);
+        .modal-header {
+          border-bottom: 1px solid #e9ecef;
+          background: #f8f9fa;
         }
 
-        .portfolio-title {
-          font-size: 1.2rem;
+        .modal-title {
           font-weight: 700;
-          color: #0d6efd;
+          color: #4154f1;
         }
 
-        .portfolio-desc {
-          color: #444;
+        .modal-body {
+          padding: 1.5rem 2rem;
+        }
+
+        .modal-body img {
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+          margin-bottom: 0.5rem;
+        }
+
+        .modal-body p {
           font-size: 1rem;
+          margin-bottom: 0.5rem;
         }
 
         @media (max-width: 767.98px) {
-          .portfolio-card.flex-row {
-            flex-direction: column !important;
-            text-align:
+          .modal-body {
+            padding: 1rem 0.5rem;
           }
 
-          .portfolio-img-wrapper {
-            margin: 0 auto 1rem auto !important;
+          .modal-body .row {
+            flex-direction: column;
           }
 
-          .portfolio-info {
-            padding-right: 0 !important;
+          .modal-body .col-md-5,
+          .modal-body .col-md-7 {
+            max-width: 100%;
+            flex: 0 0 100%;
+          }
+
+          .modal-body img {
+            max-width: 160px !important;
+            max-height: 100px !important;
           }
         }
       </style>
@@ -732,6 +763,8 @@
             width: 32px;
             height: 32px;
             object-fit: contain;
+            /* Make PNGs blue using filter */
+            filter: brightness(0) saturate(100%) invert(32%) sepia(81%) saturate(749%) hue-rotate(202deg) brightness(99%) contrast(97%);
           }
 
           .values-card .card-content h3 {
@@ -744,9 +777,23 @@
             font-size: 0.98rem;
             color: #444;
           }
+
+          /* Center last two cards on large screens */
+          .values-row-center {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px 0;
+          }
+
+          @media (max-width: 991.98px) {
+            .values-row-center {
+              flex-direction: column;
+              align-items: center;
+            }
+          }
         </style>
         <div class="row gy-3">
-
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
             <div class="values-card">
               <div class="icon-container">
@@ -791,7 +838,9 @@
               </div>
             </div>
           </div>
-
+        </div>
+        <!-- Center align last two cards below -->
+        <div class="row gy-3 values-row-center mt-2">
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="values-card">
               <div class="icon-container">
@@ -806,7 +855,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="values-card">
               <div class="icon-container">
@@ -821,8 +869,6 @@
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </section>
@@ -875,27 +921,39 @@
               </script>
           <div class="swiper-wrapper align-items-center img-container">
             <div class="swiper-slide d-flex justify-content-center align-items-center">
-              <img src="assets/img/clients/ashoka.png" alt="" width="70px" height="50px" />
+              <a href="https://www.ashokabuildcon.com/" target="_blank" rel=" noopener noreferrer">
+                <img src="assets/img/clients/ashoka.png" alt="" width="150px" height="80px" />
+
+              </a>
             </div>
 
             <div class="swiper-slide d-flex justify-content-center align-items-center">
-              <img src="assets/img/clients/integers.png" alt="" width="100px" height="70px" />
+              <a href="https://integers.ai/" target="_blank" rel=" noopener noreferrer">
+                <img src="assets/img/clients/integers.png" a.href="" alt="" width="150px" height="80px" />
+              </a>
             </div>
 
             <div class="swiper-slide d-flex justify-content-center align-items-center">
-              <img src="assets/img/clients/nabani.png" alt="" width="100px" height="70px" />
+              <a href="https://nabni.ai/" target="_blank" rel=" noopener noreferrer">
+                <img src="assets/img/clients/nabani.png" alt="" width="150px" height="80px" />
+              </a>
             </div>
 
             <div class="swiper-slide d-flex justify-content-center align-items-center">
-              <img src="assets/img/clients/octocore.png" alt="" width="80px" height="40px" />
+              <a href="https://octacorelabs.com/" target="_blank" rel=" noopener noreferrer">
+                <img src="assets/img/clients/octocore.png" alt="" width="130px" height="80px" />
+              </a>
             </div>
             <div class="swiper-slide d-flex justify-content-center align-items-center">
-              <img src="assets/img/clients/TendersOnTime.png" alt="" width="100px" height="70px" />
+              <a href="https://www.tendersontime.com/" target="_blank" rel=" noopener noreferrer">
+                <img src="assets/img/clients/TendersOnTime.png" alt="" width="150px" height="80px" />
+              </a>
             </div>
 
-
             <div class="swiper-slide d-flex justify-content-center align-items-center">
-              <img src="assets/img/clients/yokagowa.png" alt="" width="100px" height="70px" />
+              <a href="https://www.yokogawa.com/in/" target="_blank" rel=" noopener noreferrer">
+                <img src="assets/img/clients/yokagowa.png" alt="" width="150px" height="80px" />
+              </a>
             </div>
 
 
@@ -918,26 +976,24 @@
       </div>
       <!-- End Section Title -->
 
+      <!-- Contact Section -->
       <div class="container contact-section-unique" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
           <div class="col-lg-6">
             <div class="contact-info-box" data-aos="fade-right" data-aos-delay="100">
               <h3 class="contact-title">Get In Touch</h3>
-              <p class="contact-description">We'd love to hear from you! Whether you have a question about our services,
-                need support, or just want to say hello, don't hesitate to reach out.</p>
-
-
+              <p class="contact-description">
+                We'd love to hear from you! Whether you have a question about our services,
+                need support, or just want to say hello, don't hesitate to reach out.
+              </p>
 
               <div class="contact-detail-item">
                 <i class="fas fa-envelope contact-icon"></i>
                 <div class="contact-content">
                   <h5 class="contact-label">Email Us</h5>
-                  <p class="contact-text">hello@adainn.com<br>
-                  </p>
+                  <p class="contact-text">hello@adainn.com</p>
                 </div>
               </div>
-
-
 
               <div class="contact-social-section">
                 <h5 class="social-title">Follow Us</h5>
@@ -951,38 +1007,36 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form contact-form-wrapper"
-              data-aos="fade-up" data-aos-delay="200">
+            <form id="contactForm" class="contact-form-wrapper" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="" />
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required />
                 </div>
 
                 <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="" />
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required />
                 </div>
 
                 <div class="col-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="" />
+                  <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required />
                 </div>
 
                 <div class="col-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea id="message" name="message" class="form-control" rows="6" placeholder="Message"
+                    required></textarea>
                 </div>
 
                 <div class="col-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. We aim to respond to all inquiries within one business day. Thank you!
+                  <div class="loading" style="display:none;">Loading...</div>
+                  <div class="error-message text-danger"></div>
+                  <div class="sent-message text-success" style="display:none;">
+                    Your message has been sent successfully!
                   </div>
-
                   <button type="submit" class="contact-submit-btn">Send Message</button>
                 </div>
               </div>
             </form>
           </div>
-          <!-- End Contact Form -->
         </div>
       </div>
 
@@ -991,14 +1045,18 @@
 
 
     <section class="container py-5">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="text-center" style="font-size: '30px';">Our Offices</h2>
+      <div class="container section-title" data-aos="fade-up" style="background:none !important;">
+        <h2 class="text-center">Our Offices</h2>
         <!-- <p>Our Offices</p> -->
       </div>
 
       <!-- Country: Australia -->
       <div class="mb-5">
-        <h3 class="country-title">🇦🇺 Australia</h3>
+        <h3 class="country-title">
+          <img src="https://flagcdn.com/24x18/au.png" alt="Australia Flag"
+            style="width:24px;height:18px;margin-right:8px;vertical-align:middle;">
+          Australia
+        </h3>
         <div class="row g-4">
 
           <!-- Sydney -->
@@ -1020,7 +1078,11 @@
 
       <!-- Country: India -->
       <div class="mb-5">
-        <h3 class="country-title">🇮🇳 India</h3>
+        <h3 class="country-title">
+          <img src="https://flagcdn.com/24x18/in.png" alt="India Flag"
+            style="width:24px;height:18px;margin-right:8px;vertical-align:middle;">
+          India
+        </h3>
         <div class="row g-4">
 
           <!-- Nashik -->
@@ -1067,7 +1129,7 @@
   <footer id="footer" class="footer" mx-5>
 
 
-
+    <!-- 
     <div class="row gy-4">
       <div class="col-lg-3 col-md-6 footer-about mx-5">
         <a href="index.html" class="d-flex align-items-center">
@@ -1137,7 +1199,7 @@
         </div>
       </div>
     </div>
-    </div>
+    </div> -->
 
     <div class="container copyright text-center mt-4">
       <p>
@@ -1236,6 +1298,83 @@
   </script>
   <!-- Tidio Chat -->
   <script src="//code.tidio.co/your_unique_code.js" async></script>
+
+  <script>
+    const header = document.getElementById('header');
+    const whiteLogo = document.getElementById('white-logo');
+    const blackLogo = document.getElementById('black-logo');
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 50) {
+        // Background light → show black logo
+        // header.style.backgroundColor = '#000';
+
+        whiteLogo.style.display = 'block';
+        blackLogo.style.display = 'none';
+      } else {
+        // Background dark → show white logo
+
+        whiteLogo.style.display = 'none';
+        blackLogo.style.display = 'block';
+      }
+    });
+  </script>
+
+  <!-- form js -->
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("YOUR_PUBLIC_KEY"); // Get from EmailJS dashboard
+    })();
+
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      let name = document.getElementById("name").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let subject = document.getElementById("subject").value.trim();
+      let message = document.getElementById("message").value.trim();
+      let errorMessage = document.querySelector(".error-message");
+      let sentMessage = document.querySelector(".sent-message");
+      let loading = document.querySelector(".loading");
+
+      // Reset messages
+      errorMessage.textContent = "";
+      sentMessage.style.display = "none";
+
+      // Simple Validation
+      if (!name || !email || !subject || !message) {
+        errorMessage.textContent = "All fields are required.";
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        errorMessage.textContent = "Please enter a valid email address.";
+        return;
+      }
+
+      // Show loading
+      loading.style.display = "block";
+
+      // Send Email using EmailJS
+      emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message,
+        to_email: "combatsolutionsai@gmail.com"
+      })
+        .then(function (response) {
+          loading.style.display = "none";
+          sentMessage.style.display = "block";
+          document.getElementById("contactForm").reset();
+        }, function (error) {
+          loading.style.display = "none";
+          errorMessage.textContent = "Failed to send message. Please try again later.";
+        });
+    });
+  </script>
+
 
 
 </body>

@@ -37,8 +37,28 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-
-   
+    <style>
+      /* Make header fixed and with a visible background */
+      header.header {
+        position: fixed;
+        top: 0; 
+        width: 100%;
+        z-index: 1030;
+       
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+       
+      }
+      .header .logo img {
+        background: #fff;
+        border-radius: 8px;
+        padding: 2px 8px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+        max-height: 48px;
+      }
+      body.blog-page {
+        padding-top: 80px; /* Adjust for fixed header height */
+      }
+    </style>
   </head>
 
   <body class="blog-page">
