@@ -1484,7 +1484,16 @@ section,
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
+  animation: serviceCardFadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+  opacity: 0;
 }
+
+.services .service-item:nth-child(1) { animation-delay: 0.05s; opacity: 1; }
+.services .service-item:nth-child(2) { animation-delay: 0.15s; opacity: 1; }
+.services .service-item:nth-child(3) { animation-delay: 0.25s; opacity: 1; }
+.services .service-item:nth-child(4) { animation-delay: 0.35s; opacity: 1; }
+.services .service-item:nth-child(5) { animation-delay: 0.45s; opacity: 1; }
+.services .service-item:nth-child(6) { animation-delay: 0.55s; opacity: 1; }
 
 .services .service-item .icon {
   font-size: 36px;
@@ -1509,12 +1518,6 @@ section,
   font-weight: 600;
   font-size: 16px;
   padding: 8px 20px;
-}
-
-.services .service-item .read-more i {
-  line-height: 0;
-  margin-left: 5px;
-  font-size: 18px;
 }
 
 /* purple */
@@ -1839,6 +1842,30 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+
+/* Card hover effect */
+.portfolio-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image zoom effect */
+.portfolio-card .portfolio-img-wrapper {
+  overflow: hidden;
+}
+
+.portfolio-card img {
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.05);
+}
+
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -1859,9 +1886,11 @@ section,
 }
 
 .portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
+.portfolio .portfolio-filters li.filter-active 
+{
   color: var(--accent-color);
 }
+  
 
 .portfolio .portfolio-filters li:first-child {
   margin-left: 0;
@@ -1947,6 +1976,12 @@ section,
 
 .portfolio .portfolio-content:hover img {
   transform: scale(1.1);
+}
+
+.modal-body img{
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -3474,6 +3509,18 @@ section,
   animation-delay: 0.3s;
 }
 
+.office-info-card:nth-child(4) {
+  animation-delay: 0.35s;
+}
+
+.office-info-card:nth-child(5) {
+  animation-delay: 0.45s;
+}
+
+.office-info-card:nth-child(6) {
+  animation-delay: 0.55s;
+}
+
 .office-info-card::before {
   content: '';
   position: absolute;
@@ -3567,7 +3614,7 @@ section,
 
 .office-contact-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(65, 84, 241, 0.3);
+  box-shadow: 0 10px 25px rgba(65, 84, 241, 0.3);
 }
 
 .office-contact-btn svg {

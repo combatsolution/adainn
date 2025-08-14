@@ -450,7 +450,7 @@
               <div class="row align-items-center">
                 <div class="col-md-5 text-center mb-3 mb-md-0">
                   <img src="assets/img/portfolio/aiexpert.jpg" class="img-fluid rounded"
-                    style="max-width: 220px; max-height: 140px; object-fit: contain;" alt="AI Expert Talk agent" />
+                    style="width: 300px; height: 250px; border: radius 10px;; object-fit: contain;" alt="AI Expert Talk agent" />
                 </div>
                 <div class="col-md-7">
                   <p><b>Industry:</b> Education</p>
@@ -480,7 +480,7 @@
               <div class="row align-items-center">
                 <div class="col-md-5 text-center mb-3 mb-md-0">
                   <img src="assets/img/portfolio/chat.png" class="img-fluid rounded"
-                    style="max-width: 220px; max-height: 140px; object-fit: contain;"
+                    style="width: 300px; height: 250px; object-fit: contain;"
                     alt="Doctor's Automation System" />
                 </div>
                 <div class="col-md-7">
@@ -512,7 +512,7 @@
               <div class="row align-items-center">
                 <div class="col-md-5 text-center mb-3 mb-md-0">
                   <img src="assets/img/26921852_Hand holding phone with conversation of girl and chat bot.jpg"
-                    class="img-fluid rounded" style="max-width: 220px; max-height: 140px; object-fit: contain;"
+                    class="img-fluid rounded" style="width: 300px; height: 250px; object-fit: contain;"
                     alt="Jnanic" />
                 </div>
                 <div class="col-md-7">
@@ -544,7 +544,7 @@
               <div class="row align-items-center">
                 <div class="col-md-5 text-center mb-3 mb-md-0">
                   <img src="assets/img/portfolio/idp.jpg" class="img-fluid rounded"
-                    style="max-width: 220px; max-height: 140px; object-fit: contain;"
+                    style="width: 300px; height: 250px; object-fit: contain;"
                     alt="Intelligent Document Processing" />
                 </div>
                 <div class="col-md-7">
@@ -574,7 +574,7 @@
               <div class="row align-items-center">
                 <div class="col-md-5 text-center mb-3 mb-md-0">
                   <img src="assets/img/portfolio/docs.png" class="img-fluid rounded"
-                    style="max-width: 220px; max-height: 140px; object-fit: contain;" alt="Nabni AI" />
+                    style="width: 300px; height: 250px; object-fit: contain;" alt="Nabni AI" />
                 </div>
                 <div class="col-md-7">
                   <p><b>Industry:</b> Real Estate </p>
@@ -604,7 +604,7 @@
               <div class="row align-items-center">
                 <div class="col-md-5 text-center mb-3 mb-md-0">
                   <img src="assets/img/16541.jpg" class="img-fluid rounded"
-                    style="max-width: 220px; max-height: 140px; object-fit: contain;" alt="Mammoth Technologies" />
+                    style="width: 300px; height: 250px; object-fit: contain;" alt="Mammoth Technologies" />
                 </div>
                 <div class="col-md-7">
                   <p><b>Industry:</b> Mining </p>
@@ -929,7 +929,7 @@
 
             <div class="swiper-slide d-flex justify-content-center align-items-center">
               <a href="https://integers.ai/" target="_blank" rel=" noopener noreferrer">
-                <img src="assets/img/clients/integers.png" a.href="" alt="" width="150px" height="80px" />
+                <img src="assets/img/clients/integers.png" a.href="" alt="" width="150px" height="100px" />
               </a>
             </div>
 
@@ -941,7 +941,7 @@
 
             <div class="swiper-slide d-flex justify-content-center align-items-center">
               <a href="https://octacorelabs.com/" target="_blank" rel=" noopener noreferrer">
-                <img src="assets/img/clients/octocore.png" alt="" width="130px" height="80px" />
+                <img src="assets/img/clients/octocore.png" alt="" width="80px" height="80px" />
               </a>
             </div>
             <div class="swiper-slide d-flex justify-content-center align-items-center">
@@ -1007,31 +1007,22 @@
           </div>
 
           <div class="col-lg-6">
-            <form id="contactForm" class="contact-form-wrapper" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://formspree.io/f/xanbkqkj" method="POST" class="contact-form-wrapper"
+              onsubmit="return validateForm()">
               <div class="row gy-4">
                 <div class="col-md-6">
-                  <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required />
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required />
                 </div>
-
                 <div class="col-md-6">
-                  <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required />
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required />
                 </div>
-
                 <div class="col-12">
-                  <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required />
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required />
                 </div>
-
                 <div class="col-12">
-                  <textarea id="message" name="message" class="form-control" rows="6" placeholder="Message"
-                    required></textarea>
+                  <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
                 </div>
-
                 <div class="col-12 text-center">
-                  <div class="loading" style="display:none;">Loading...</div>
-                  <div class="error-message text-danger"></div>
-                  <div class="sent-message text-success" style="display:none;">
-                    Your message has been sent successfully!
-                  </div>
                   <button type="submit" class="contact-submit-btn">Send Message</button>
                 </div>
               </div>
@@ -1321,58 +1312,32 @@
   </script>
 
   <!-- form js -->
-
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
-    (function () {
-      emailjs.init("YOUR_PUBLIC_KEY"); // Get from EmailJS dashboard
-    })();
-
-    document.getElementById("contactForm").addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      let name = document.getElementById("name").value.trim();
-      let email = document.getElementById("email").value.trim();
-      let subject = document.getElementById("subject").value.trim();
-      let message = document.getElementById("message").value.trim();
-      let errorMessage = document.querySelector(".error-message");
-      let sentMessage = document.querySelector(".sent-message");
-      let loading = document.querySelector(".loading");
-
-      // Reset messages
-      errorMessage.textContent = "";
-      sentMessage.style.display = "none";
-
-      // Simple Validation
-      if (!name || !email || !subject || !message) {
-        errorMessage.textContent = "All fields are required.";
-        return;
+    function validateForm() {
+      const email = document.querySelector('input[name="email"]').value.trim();
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
       }
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        errorMessage.textContent = "Please enter a valid email address.";
-        return;
-      }
+      return true;
+    }
 
-      // Show loading
-      loading.style.display = "block";
+     // Prevent browser from restoring form values on back navigation
+  window.addEventListener("pageshow", function (event) {
+    if (event.persisted) {
+      // If page is loaded from bfcache (back/forward), reload it
+      window.location.reload();
+    }
+  });
 
-      // Send Email using EmailJS
-      emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
-        from_name: name,
-        from_email: email,
-        subject: subject,
-        message: message,
-        to_email: "combatsolutionsai@gmail.com"
-      })
-        .then(function (response) {
-          loading.style.display = "none";
-          sentMessage.style.display = "block";
-          document.getElementById("contactForm").reset();
-        }, function (error) {
-          loading.style.display = "none";
-          errorMessage.textContent = "Failed to send message. Please try again later.";
-        });
-    });
+
+  window.addEventListener("load", function() {
+    const form = document.querySelector("form");
+    if (form) form.reset();
+  });
+
+
   </script>
 
 
