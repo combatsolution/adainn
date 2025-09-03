@@ -163,7 +163,7 @@ h6 {
 }
 
 .header .logo #black-logo{
- display: none; /* Hide black logo initially */
+ display: visible; /* Hide black logo initially */
 }
 
 .header .logo img {
